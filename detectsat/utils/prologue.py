@@ -1,9 +1,10 @@
 import argparse
-import os
+import os 
 
 parser = argparse.ArgumentParser(description='Satellite Streaks Detection')
 
 parser.add_argument('--i', type=str)
+parser.add_argument('--pos', type=str)
 parser.add_argument('--h', type=str)
 parser.add_argument('--o', type = str)
 parser.add_argument('--n', type = int, default = 1)
