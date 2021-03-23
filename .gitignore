@@ -1,0 +1,7 @@
+detectsat/__pycache__/
+detectsat/*.png
+detectsat/lines/
+detectsat/debug_results/
+detectsat/trainset/
+detectsat/*.fits
+.DS_Store
