@@ -4,4 +4,6 @@ detectsat/lines/
 detectsat/debug_results/
 detectsat/trainset/
 detectsat/*.fits
+detectsat/intensity/
+detectsat/utils/__pycache__/
 .DS_Store
