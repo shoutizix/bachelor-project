@@ -17,8 +17,8 @@ def main(args):
 
     scaled_data = scale_image(data[::-1].copy())
     star = scaled_data[y_star-radius:y_star+radius, x_star-radius:x_star+radius]
-    data_convolved = ndimage.convolve(scaled_data, star, mode='constant', cval=0.0)
-    imgio.imwrite('convolved.png', data_convolved)
+    data_convolved = ndimage.convolve(scaled_data, star)
+    imgio.imwrite('convolved_yx_wihtout_parameter.png', data_convolved)
 
 if __name__ == '__main__':
     main(prologue.get_args())
