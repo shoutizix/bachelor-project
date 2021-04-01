@@ -9,19 +9,17 @@ import imageio as imgio
 def main(args):
     #x_star,y_star = 3274,7977
     #radius = 10
-    height = 300
-    width = 1000
+    height = 2000
+    width = 2000
     value = 0.01
-    x_star,y_star = 3069,7821
+    #x_star,y_star = 3069,7821
+    x_star,y_star = 1175,7541
     radius = 8
-    ampl, period, phase_shift, vertical_shift = 0.5, 0.1, 0, 0.5
+    ampl, period, phase_shift, vertical_shift = 0.4, 0.01, 0, 0.5
     #x_star,y_star = 2585,7765
     #radius = 5
     blank_image = np.zeros((height,width))
     data = fits.open(args.i)[0].data
-    
-    #scaled_data = scale_image(data[::-1].copy())
-    #print(np.shape(scaled_data))
     star = data[y_star-radius:y_star+radius, x_star-radius:x_star+radius]
     height_line = 2*radius
     line = np.zeros((height_line, width))
@@ -32,7 +30,7 @@ def main(args):
     line_convolved = ndimage.convolve(line, star)
     data_with_line = addLineOnData(line_convolved, data, width, height_line)
     scaled_data = scale_image(data_with_line[::-1].copy())
-    createImage('try_image_line2.png', scaled_data)
+    createImage('try_image_line_new_star2.png', scaled_data)
     #showGraph(np.transpose(line_convolved))
 
 
@@ -50,8 +48,6 @@ def addLineOnData(line, data, width_line, height_line):
     #For the first block of the fits file
     min_x, min_y = 100, 100
     max_x, max_y = 2000, 4000
-    print(np.shape(line))
-    print(np.shape(data))
     data[min_y:min_y+height_line, min_x:min_x+width_line] += line
     return data
 
