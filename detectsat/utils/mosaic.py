@@ -84,6 +84,7 @@ def get_blocks_addresses(raw_img):
     ----------
     crops_addresses : dict
     """
+    # Maybe there is a problem with this part for the new fits files
     nans = np.argwhere(np.isnan(raw_img))
     bunches = nans[(nans[:,1] == 0) | (nans[:,0] == 0)]
     cuts_y = []
