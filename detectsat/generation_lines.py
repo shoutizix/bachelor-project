@@ -1,6 +1,7 @@
 import astropy.io.fits as fits
 import utils.prologue as prologue
 from scipy import ndimage
+from scipy.optimize import curve_fit
 from matplotlib import pyplot as plt
 import numpy as np
 from utils.mosaic import *
@@ -17,7 +18,7 @@ def main(args):
     x_star,y_star = 1665,8346
     radius = 15
     height = 2000
-    width = 2000
+    width = 1900
     value = 0.02
     ampl, period, phase_shift, vertical_shift = 0.01, 0.01, 0, 0.5
 
@@ -39,8 +40,9 @@ def main(args):
     #createImage('line_convolved_reflect_4r.png', line_convolved)
     data_with_line = addLineOnData(line_convolved, data, width, height_line)
     scaled_data = scale_image(data_with_line[::-1].copy())
-    createImage('try_image_line_new_star_14_04.png', scaled_data)
-    createFitsFile(args.i, scaled_data)
+    findIntensityAlongTheLine(scaled_data, height_line, width, 100, 100)
+    #createImage('try_image_line_new_star_14_04.png', scaled_data)
+    #createFitsFile(args.i, scaled_data)
     #showGraph(np.transpose(line_convolved))
 
 
@@ -63,6 +65,30 @@ def addLineOnData(line, data, width_line, height_line):
     #print('-----------------------')
     #print(data[min_y:min_y+height_line, min_x:min_x+width_line])
     return data
+
+def findIntensityAlongTheLine(data, height_line, width_line, start_line_x, start_line_y):
+    intensities = []
+    for i in range(width_line):
+        intensity_for_this_x = 0
+        for j in range(height_line):
+            intensity_for_this_x += data[start_line_y+j,start_line_x+i]
+        intensities.append(intensity_for_this_x/height_line)
+    x_val = np.arange(width_line)
+    params, _ = curve_fit(sinus, x_val, intensities)
+    print(params)
+    
+    #plt.scatter(x_val, intensities, label='Data')
+    #plt.plot(x_val, sinus(x_val, params[0], params[1], params[2], params[3]), color='red', label='Fitted function')
+    #plt.legend(loc='best')
+    #plt.show()
+    
+    #intensities_fft = np.fft.fft(intensities)
+    #intensities_fft = intensities_fft[:round(width_line/2)]
+    #intensities_fft = np.abs(intensities_fft)
+    #intensities_fft = intensities_fft/max(intensities_fft)
+
+
+    
 
 def createFitsFile(name, array):
     hdu = fits.PrimaryHDU(array)
