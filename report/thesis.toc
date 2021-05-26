@@ -3,20 +3,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Acknowledgments}{2}{chapter*.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract (English/Français)}{3}{chapter*.2}%
+\contentsline {chapter}{Abstract}{3}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Background}{6}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Background}{7}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Design}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Design}{8}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Implementation}{8}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Implementation}{9}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{9}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Evaluation}{10}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Related Work}{10}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Related Work}{11}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{11}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Conclusion}{12}{chapter.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{12}{section*.4}%
+\contentsline {chapter}{Bibliography}{13}{section*.4}%

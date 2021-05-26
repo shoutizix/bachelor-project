@@ -19,6 +19,28 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{detectsatRepo}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=778424974a21454fd087a0405e6e5558}{%
+           family={Bouquet},
+           familyi={B\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{778424974a21454fd087a0405e6e5558}
+      \strng{fullhash}{778424974a21454fd087a0405e6e5558}
+      \strng{bibnamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authorbibnamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authornamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authorfullhash}{778424974a21454fd087a0405e6e5558}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{$https://github.com/YBouquet/detectsat$}
+      \field{title}{{Detectsat Repository}}
+      \field{year}{2020}
+    \endentry
     \entry{dinesh20oakland}{inproceedings}{}
       \name{author}{4}{}{%
         {{hash=547296be5f9f7ed9689ca1d70843ce27}{%
@@ -56,6 +78,28 @@
       \field{title}{{RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization}}
       \field{year}{2020}
       \keyw{conference}
+    \endentry
+    \entry{templateRef}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=2410abb6cefe7a55bdca6176f9019943}{%
+           family={Payer},
+           familyi={P\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2410abb6cefe7a55bdca6176f9019943}
+      \strng{fullhash}{2410abb6cefe7a55bdca6176f9019943}
+      \strng{bibnamehash}{2410abb6cefe7a55bdca6176f9019943}
+      \strng{authorbibnamehash}{2410abb6cefe7a55bdca6176f9019943}
+      \strng{authornamehash}{2410abb6cefe7a55bdca6176f9019943}
+      \strng{authorfullhash}{2410abb6cefe7a55bdca6176f9019943}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{$https://github.com/HexHive/thesis\_template$}
+      \field{title}{{Template for EPFL (BSc, MSc, or doctoral) theses and semester projects}}
+      \field{year}{2020}
     \endentry
   \enddatalist
 \endrefsection

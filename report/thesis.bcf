@@ -2182,7 +2182,10 @@
     <bcf:datasource type="file" datatype="bibtex">thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">dinesh20oakland</bcf:citekey>
+    <bcf:citekey order="1">templateRef</bcf:citekey>
+    <bcf:citekey order="2">detectsatRepo</bcf:citekey>
+    <bcf:citekey order="3">detectsatRepo</bcf:citekey>
+    <bcf:citekey order="4">dinesh20oakland</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -10,13 +10,14 @@
 %   http://www.latex-project.org/lppl.txt
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,11pt,oneside]{report}
+\documentclass[a4paper,12pt,oneside]{report}
 % Options: MScThesis, BScThesis, MScProject, BScProject
 \usepackage[BScThesis]{EPFLreport}
 \usepackage{xspace}
+\usepackage{notoccite}
 
 \title{Rotation estimation of detected satellites}
-\author{Noah Kaltenrieder}
+\author{Noah Kaltenrieder (301368)}
 \supervisor{Mathieu Salzmann}
 %\adviser{Prof. Dr. sc. ETH Mathias Payer}
 %\coadviser{Second Adviser}
@@ -29,21 +30,22 @@
 %\makededication
 \acknowledgments{
     I really would like to thank my supervisor Prof. Mathieu Salzmann who helped me a lot and all the people that participated
-    in a way to this project, namely Dr. Cameron Lemon, Prof. Jean-Paul Kneib, Prof. Frédéric Courbin. I also want to express
-    my gratitude to Yann Bouquet who helped me with pleasure when I had questions. Finally, I also would like to specially thank 
+    in a way to this project, namely Dr. Cameron Lemon, Prof. Jean-Paul Kneib, Prof. Frédéric Courbin, and the SSA Team. I also want to express
+    my gratitude to Yann Bouquet who helped me with pleasure when I had questions. Finally, I also would like to especially thank 
     Alexandre Di Piazza and Marcellin Feasson with whom I have collaborated through all the semester in different ways.
+    \newline 
+    Thanks a lot to Prof. Mathias Payer for the thesis template that I used to write this report~\cite{templateRef}
 }
 \makeacks
 
 \begin{abstract}
-The \sysname tool enables lateral decomposition of a multi-dimensional
-flux compensator along the timing and space axes.
-
-The abstract serves as an executive summary of your project.
-Your abstract should cover at least the following topics, 1-2 sentences for
-each: what area you are in, the problem you focus on, why existing work is
-insufficient, what the high-level intuition of your work is, maybe a neat
-design or implementation decision, and key results of your evaluation.
+I present an approach to extract the intensity along the satellite streaks that can be found in images that were obtained by OMEGACAM 
+on the VLT Survey Telescope. In this project, I only analyzed the long tracks that were created by high velocity objects, to
+try to get an estimation about their rotation. I used Fourier transform to get the periodicity of the intensity along the tracks.
+Due to the lack of real data about rotation, I first had to create fake streaks with sinusoid intensity and different angles.
+I manually get the tracks to run my code on them, so ideally this project should be integrated with DetectSat~\cite{detectsatRepo} so that all 
+the process can be done automatically. I found very great result with it and run the pipeline on real tracks. By making assumptions about the satellite, 
+like their altitude, I get possible results, but since we don't have access to the real values, we can't say if it is close to reality or not.
 \end{abstract}
 
 %\begin{frenchabstract}
@@ -56,6 +58,31 @@ design or implementation decision, and key results of your evaluation.
 %%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%
+
+This project is about estimating the rotation of spatial objects detected by the OMEGACAM on the VLT Survey Telescope. In these times,
+we have a lot of flying objects, it can be debris, useful satellites or dead satellites, around the Earth and it becomes more and more
+necessary to have a clear view of all these objects.
+The project of Yann Bouquet "DetectSat"\cite{detectsatRepo} was focused on detection of the satellite tracks on fits files, but with both,
+small (low velocity) and long (high velocity) streaks. To this project I had to focus on the long tracks, so that the variation of intensity
+along the line could be better detected. The rotation estimation can be used to determine which kind of object the streak is and, if it is
+a satellite, it may be used to better find out which one it is. Ideally, this should be run on the lines detected by DetectSat so all the process
+could be done with only the fits file as input.
+\newline
+\newline
+The main challenge is that we don't have access to data about rotation of satellites, so I had to first create my own streaks 
+with sinusoid intensity. This lack of resources is very restrictive, since even if I get a result, we cannot know the precision of this method 
+and we cannot be sure that it is right or completely wrong. This is why I had to begin with creating lines that seem realistic and
+try with random angles.
+\newline
+\newline
+The second part of this project was to retrieve the periodicity of the sinusoidal function along the streaks that I generated, and finally
+try this on real tracks. Since my project does not recognize the lines, I had to find the coordinates of the streaks by hand and give them
+as input to the pipeline. For this part, there are many factors that can decrease the precision of the pipeline, e.g., if the line crosses a
+really bright star, it gives a peak of intensity and can lead to wrong result, or if the brightness of the streak is too small
+compared to the brightness of the background of the sky on the image. 
+
+
+
 
 The introduction is a longer writeup that gently eases the reader into your
 thesis~\cite{dinesh20oakland}. Use the first paragraph to discuss the setting.
