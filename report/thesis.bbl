@@ -1,0 +1,63 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{dinesh20oakland}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=547296be5f9f7ed9689ca1d70843ce27}{%
+           family={Dinesh},
+           familyi={D\bibinitperiod},
+           given={Sushant},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e11916bc639b89e42dc29aa51513e5aa}{%
+           family={Burow},
+           familyi={B\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3ef6b69482a18357987464040ea00810}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Dongyan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2410abb6cefe7a55bdca6176f9019943}{%
+           family={Payer},
+           familyi={P\bibinitperiod},
+           given={Mathias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{34bbf0340a0c95aa1da1fafee5f007ad}
+      \strng{fullhash}{5159e420e50501e5e4477835b6e5fbb0}
+      \strng{bibnamehash}{5159e420e50501e5e4477835b6e5fbb0}
+      \strng{authorbibnamehash}{5159e420e50501e5e4477835b6e5fbb0}
+      \strng{authornamehash}{34bbf0340a0c95aa1da1fafee5f007ad}
+      \strng{authorfullhash}{5159e420e50501e5e4477835b6e5fbb0}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Symposium on Security and Privacy}
+      \field{title}{{RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization}}
+      \field{year}{2020}
+      \keyw{conference}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
