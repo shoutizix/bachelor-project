@@ -102,24 +102,24 @@ captured image February 22, 2020, at 02:11:36, and with the pixels scaled using 
 \end{center}
 The pipeline is being run on the entire file, with the coordinates that are relative to the entire file : the origin is at the bottom left of
 the fits file. The first part of this project, which is about line generation, is completely based on this file Figure \ref{mainFits}. I chose
-this file because we can clearly see a really interesting tracks that goes through the image :
+this file because we can clearly see a really interesting track that goes through the image :
 \begin{center}
     \includegraphics[scale=0.06]{omega_36.295_streak_report}
     \captionof{figure}{The interesting streak}
     \label{mainFitsStreak}
 \end{center}
-This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way to test the pipeline with a not
-too tricky streak. Thanks to Marcellin, he could identify this and it turned out that this streak is actually a debris of the European 
-carrier rocket Ariane 2 ! We know that it is at a geostationnary altitude, so \textasciitilde 36'000 [km] and has a speed of \textasciitilde 3065 [m/s]. I'll use these
-informations later to analyse the coherence of the result obtained by the pipeline.
+This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way to test the pipeline with a 
+streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that this streak is actually a debris of the European 
+carrier rocket Ariane 2 ! We know that it is at a geostationary altitude, so \textasciitilde 36'000 [km] and has a speed of \textasciitilde 3065 [m/s]. I will use this
+information later to analyze the coherence of the result obtained by the pipeline.
 
 %%%%%%%%%%%%%%%%
-\chapter{Line generation}
+\chapter{Line Generation}
 %%%%%%%%%%%%%%%%
 
 When I started this project, we had no data about rotation of satellites and their corresponding tracks on a file, so I had to first 
-generate streaks on the image myself, to be able to test the pipeline. First, to generate a line I had to chose a existing star in the file
-and cut it out to have a PSF to convolve my line with. The PSF : "Point Spread Function", is like the quantity of blurring of a point object.
+generate streaks on the image myself, to be able to test the pipeline. First, to generate a line I had to choose an existing star in the file
+and cut it out to have a PSF to convolve my line with. The PSF : "Point Spread Function" is like the quantity of blurring of a point object.
 Here, I had to use it so that my generated line seems more realistic in the image. 
 
 %%Explain the convolution
@@ -133,18 +133,18 @@ Here, I had to use it so that my generated line seems more realistic in the imag
     \label{lineConvolved}
 \end{center}
 
-I will now explain the method I have used to achieve this result. First, I have to chose a star by hand and cut it out to use it as a PSF.
-The dimension of the star cutted out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
-except at the center of the array, the center line of 1 pixel of height at the center is set with sinusoid values. Once, I have this two pieces,
-I can convolve the two arrays together to have the final line with an adequate PSF. I finally rotated the final convolved line by a random angle
-and add it to the image by summing up the values with the image's array. The final result on the image is pretty satisfying and coherent.
+I will now explain the method I have used to achieve this result. First, I have to choose a star by hand and cut it out to use it as a PSF.
+The dimension of the star cut out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
+except at the center of the array, the center line of one pixel of height at the center is set with sinusoid values. Once, I have these two pieces,
+I can convolve the two arrays together to make the final line with an appropriate PSF. I finally rotated the final convolved line by a random angle
+and add it to the image by summing up the values with the image's array. The final result of the line in the image is pretty satisfying and coherent.
 \begin{center}
     \includegraphics[scale=0.07]{report_image_line_rotated}
     \captionof{figure}{The generated line on the image}
     \label{lineOnImage}
 \end{center}
-The inconvenient of this method is that I had to chose a star by hand and it will work great for this specific file, if we want to make this code 
-works with another image we have to chose a star from the new file to have a coherent PSF to integrate the line better on it.
+The inconvenience of this method is that I had to choose a star by hand and it will work great for this specific file, if we want to make this code 
+works with another image we have to choose a star from the new file to have a coherent PSF to integrate the line better on it.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,7 +152,7 @@ works with another image we have to chose a star from the new file to have a coh
 %%%%%%%%%%%%%%%%%%%%%%%%
 
 The implementation covers some of the implementation details of your project.
-This is not intended to be a low level description of every line of code that
+This is not intended to be a low-level description of every line of code that
 you wrote but covers the implementation aspects of the projects.
 
 This section is usually 3-5 pages.
