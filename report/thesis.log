@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  2 JUN 2021 13:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  2 JUN 2021 16:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,7 +813,25 @@ See the caption package documentation for explanation.
 
 [7
 
- <./omega_36.295_report.png (PNG copy)>] [8]
+ <./omega_36.295_report.png (PNG copy)>]
+<omega_36.295_streak_report.png, id=108, 8463.62pt x 1951.29pt>
+File: omega_36.295_streak_report.png Graphic file (type png)
+<use omega_36.295_streak_report.png>
+Package pdftex.def Info: omega_36.295_streak_report.png  used on input line 107
+.
+(pdftex.def)             Requested size: 507.7953pt x 117.07234pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 108.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (42.79588pt too wide) in paragraph at lines 107--108
+ [] 
+ []
+
+[8 <./omega_36.295_streak_report.png (PNG copy)>]
 Chapter 3.
 [9
 
@@ -835,7 +853,7 @@ Chapter 7.
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-64.
+77.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -849,33 +867,33 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 164.
+(Font)              <12> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 164.
+(Font)              <8> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 164.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+(Font)              <6> on input line 177.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
  [14
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 1B65AD1870041169F27DE6B023CD50C1;499.
+(rerunfilecheck)             Checksum: 0FC8BFBF441B8C8E8BEB08FE96FE6A1C;508.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17734 strings out of 480608
- 311870 string characters out of 5903630
- 1053062 words of memory out of 5000000
- 33240 multiletter control sequences out of 15000+600000
- 600506 words of font info for 113 fonts, out of 8000000 for 9000
+ 17750 strings out of 480608
+ 312186 string characters out of 5903630
+ 1053099 words of memory out of 5000000
+ 33248 multiletter control sequences out of 15000+600000
+ 601148 words of font info for 117 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  49i,5n,54p,863b,1718s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -885,10 +903,10 @@ live/2020/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
 f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfss2074.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (14 pages, 150308 bytes).
+Output written on thesis.pdf (14 pages, 12772129 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 19043 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 19048 words of extra memory for PDF output out of 20736 (max. 10000000)
 
