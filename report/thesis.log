@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  2 JUN 2021 16:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  2 JUN 2021 22:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,27 +833,49 @@ Overfull \hbox (42.79588pt too wide) in paragraph at lines 107--108
 
 [8 <./omega_36.295_streak_report.png (PNG copy)>]
 Chapter 3.
+<report_line_not_convolved.png, id=115, 360.34625pt x 1883.035pt>
+File: report_line_not_convolved.png Graphic file (type png)
+<use report_line_not_convolved.png>
+Package pdftex.def Info: report_line_not_convolved.png  used on input line 126.
+
+(pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 127.
+See the caption package documentation for explanation.
+
+<report_line_convolved.png, id=116, 360.34625pt x 1883.035pt>
+File: report_line_convolved.png Graphic file (type png)
+<use report_line_convolved.png>
+Package pdftex.def Info: report_line_convolved.png  used on input line 129.
+(pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 130.
+See the caption package documentation for explanation.
+
 [9
 
-]
+ <./report_line_not_convolved.png (PNG copy)>] [10 <./report_line_convolved.png
+ (PNG copy)>]
 Chapter 4.
-[10
-
-]
-Chapter 5.
 [11
 
 ]
-Chapter 6.
+Chapter 5.
 [12
 
 ]
-Chapter 7.
+Chapter 6.
 [13
 
 ]
+Chapter 7.
+[14
+
+]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-77.
+90.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -867,21 +889,21 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 177.
+(Font)              <12> on input line 190.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 177.
+(Font)              <8> on input line 190.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 177.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
- [14
+(Font)              <6> on input line 190.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+ [15
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 0FC8BFBF441B8C8E8BEB08FE96FE6A1C;508.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
@@ -889,13 +911,13 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17750 strings out of 480608
- 312186 string characters out of 5903630
- 1053099 words of memory out of 5000000
- 33248 multiletter control sequences out of 15000+600000
- 601148 words of font info for 117 fonts, out of 8000000 for 9000
+ 17766 strings out of 480608
+ 312638 string characters out of 5903630
+ 1053206 words of memory out of 5000000
+ 33264 multiletter control sequences out of 15000+600000
+ 600827 words of font info for 115 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 49i,5n,54p,863b,1718s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,6n,54p,863b,1718s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2020/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
@@ -903,10 +925,10 @@ live/2020/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
 f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2020/texmf-dist
 /fonts/type1/public/cm-super/sfss2074.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (14 pages, 12772129 bytes).
+Output written on thesis.pdf (15 pages, 12818120 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 19048 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
+ 35 named destinations out of 1000 (max. 500000)
+ 19058 words of extra memory for PDF output out of 20736 (max. 10000000)
 

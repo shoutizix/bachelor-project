@@ -96,17 +96,17 @@ I principally used the fits file "\emph{OMEGA.2020-02-22T02:11:36.295\_fullfield
 captured image February 22, 2020, at 02:11:36, and with the pixels scaled using ZScale to be able to see the streaks as wanted.
 \newline
 \begin{center}
-\includegraphics{omega_36.295_report}
-\captionof{figure}{The main FITS image that I used}
-\label{mainFits}
+    \includegraphics{omega_36.295_report}
+    \captionof{figure}{The main FITS image that I used}
+    \label{mainFits}
 \end{center}
 The pipeline is being run on the entire file, with the coordinates that are relative to the entire file : the origin is at the bottom left of
 the fits file. The first part of this project, which is about line generation, is completely based on this file Figure \ref{mainFits}. I chose
 this file because we can clearly see a really interesting tracks that goes through the image :
 \begin{center}
-\includegraphics[scale=0.06]{omega_36.295_streak_report}
-\captionof{figure}{The interesting streak}
-\label{mainFitsStreak}
+    \includegraphics[scale=0.06]{omega_36.295_streak_report}
+    \captionof{figure}{The interesting streak}
+    \label{mainFitsStreak}
 \end{center}
 This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way to test the pipeline with a not
 too tricky streak. Thanks to Marcellin, he could identify this and it turned out that this streak is actually a debris of the European 
@@ -119,12 +119,25 @@ informations later to analyse the coherence of the result obtained by the pipeli
 
 When I started this project, we had no data about rotation of satellites and their corresponding tracks on a file, so I had to first 
 generate streaks on the image myself, to be able to test the pipeline. First, to generate a line I had to chose a existing star in the file
-and cut it out to have a PSF.
-Introduce and discuss the design decisions that you made during this project.
-Highlight why individual decisions are important and/or necessary. Discuss
-how the design fits together.
+and cut it out to have a PSF to convolve my line with. The PSF : "Point Spread Function", is like the quantity of blurring of a point object.
+Here, I had to use it so that my generated line seems more realistic in the image. 
 
-This section is usually 5-10 pages.
+\begin{center}
+    \includegraphics[scale=0.1]{report_line_not_convolved}
+    \captionof{figure}{The line without using the PSF}
+    \label{lineNotConvolved}
+    \includegraphics[scale=0.1]{report_line_convolved}
+    \captionof{figure}{The line using the PSF}
+    \label{lineConvolved}
+\end{center}
+
+I will now explain the method I have used to achieve this result. First, I have to chose a star by hand and cut it out to use it as a PSF.
+The dimension of the star cutted out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
+except at the center of the array, the center line of 1 pixel of height at the center is set with sinusoid values. Once, I have this two pieces,
+I can convolve the two arrays together to have the final line with an adequate PSF. 
+\newline
+The inconvenient of this method is that I had to chose a star by hand and it will work great for this specific file, if we want to make this code 
+works with another image we have to chose a star from the new file to have a coherent PSF to integrate the line better on it.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%
