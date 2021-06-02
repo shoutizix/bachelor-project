@@ -134,8 +134,13 @@ Here, I had to use it so that my generated line seems more realistic in the imag
 I will now explain the method I have used to achieve this result. First, I have to chose a star by hand and cut it out to use it as a PSF.
 The dimension of the star cutted out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
 except at the center of the array, the center line of 1 pixel of height at the center is set with sinusoid values. Once, I have this two pieces,
-I can convolve the two arrays together to have the final line with an adequate PSF. 
-\newline
+I can convolve the two arrays together to have the final line with an adequate PSF. I finally rotated the final convolved line by a random angle
+and add it to the image by summing up the values with the image's array. The final result on the image is pretty satisfying and coherent.
+\begin{center}
+    \includegraphics[scale=0.07]{report_image_line_rotated}
+    \captionof{figure}{The generated line on the image}
+    \label{lineOnImage}
+\end{center}
 The inconvenient of this method is that I had to chose a star by hand and it will work great for this specific file, if we want to make this code 
 works with another image we have to chose a star from the new file to have a coherent PSF to integrate the line better on it.
 
