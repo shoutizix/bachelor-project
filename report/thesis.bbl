@@ -18,68 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{detectsatRepo}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{hash=778424974a21454fd087a0405e6e5558}{%
-           family={Bouquet},
-           familyi={B\bibinitperiod},
-           given={Yann},
-           giveni={Y\bibinitperiod}}}%
-      }
-      \strng{namehash}{778424974a21454fd087a0405e6e5558}
-      \strng{fullhash}{778424974a21454fd087a0405e6e5558}
-      \strng{bibnamehash}{778424974a21454fd087a0405e6e5558}
-      \strng{authorbibnamehash}{778424974a21454fd087a0405e6e5558}
-      \strng{authornamehash}{778424974a21454fd087a0405e6e5558}
-      \strng{authorfullhash}{778424974a21454fd087a0405e6e5558}
-      \field{sortinit}{B}
-      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{$https://github.com/YBouquet/detectsat$}
-      \field{title}{{Detectsat Repository}}
-      \field{year}{2020}
-    \endentry
-    \entry{dinesh20oakland}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=547296be5f9f7ed9689ca1d70843ce27}{%
-           family={Dinesh},
-           familyi={D\bibinitperiod},
-           given={Sushant},
-           giveni={S\bibinitperiod}}}%
-        {{hash=e11916bc639b89e42dc29aa51513e5aa}{%
-           family={Burow},
-           familyi={B\bibinitperiod},
-           given={Nathan},
-           giveni={N\bibinitperiod}}}%
-        {{hash=3ef6b69482a18357987464040ea00810}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Dongyan},
-           giveni={D\bibinitperiod}}}%
-        {{hash=2410abb6cefe7a55bdca6176f9019943}{%
-           family={Payer},
-           familyi={P\bibinitperiod},
-           given={Mathias},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{34bbf0340a0c95aa1da1fafee5f007ad}
-      \strng{fullhash}{5159e420e50501e5e4477835b6e5fbb0}
-      \strng{bibnamehash}{5159e420e50501e5e4477835b6e5fbb0}
-      \strng{authorbibnamehash}{5159e420e50501e5e4477835b6e5fbb0}
-      \strng{authornamehash}{34bbf0340a0c95aa1da1fafee5f007ad}
-      \strng{authorfullhash}{5159e420e50501e5e4477835b6e5fbb0}
-      \field{sortinit}{D}
-      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{IEEE International Symposium on Security and Privacy}
-      \field{title}{{RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization}}
-      \field{year}{2020}
-      \keyw{conference}
-    \endentry
-    \entry{templateRef}{inproceedings}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{templateRef}{online}{}
       \name{author}{1}{}{%
         {{hash=2410abb6cefe7a55bdca6176f9019943}{%
            family={Payer},
@@ -93,13 +33,49 @@
       \strng{authorbibnamehash}{2410abb6cefe7a55bdca6176f9019943}
       \strng{authornamehash}{2410abb6cefe7a55bdca6176f9019943}
       \strng{authorfullhash}{2410abb6cefe7a55bdca6176f9019943}
-      \field{sortinit}{P}
-      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{$https://github.com/HexHive/thesis\_template$}
       \field{title}{{Template for EPFL (BSc, MSc, or doctoral) theses and semester projects}}
+      \field{urlyear}{2021}
       \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/HexHive/thesis_template
+      \endverb
+      \verb{url}
+      \verb https://github.com/HexHive/thesis_template
+      \endverb
+    \endentry
+    \entry{detectsatRepository}{online}{}
+      \name{author}{1}{}{%
+        {{hash=778424974a21454fd087a0405e6e5558}{%
+           family={Bouquet},
+           familyi={B\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{778424974a21454fd087a0405e6e5558}
+      \strng{fullhash}{778424974a21454fd087a0405e6e5558}
+      \strng{bibnamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authorbibnamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authornamehash}{778424974a21454fd087a0405e6e5558}
+      \strng{authorfullhash}{778424974a21454fd087a0405e6e5558}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Detectsat Repository}}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/YBouquet/detectsat
+      \endverb
+      \verb{url}
+      \verb https://github.com/YBouquet/detectsat
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
