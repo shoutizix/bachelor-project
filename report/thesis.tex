@@ -15,6 +15,7 @@
 \usepackage[BScThesis]{EPFLreport}
 \usepackage{xspace}
 \usepackage{caption}
+\usepackage{subfig}
 
 \onehalfspacing
 
@@ -124,14 +125,20 @@ Here, I had to use it so that my generated line seems more realistic in the imag
 
 %%Explain the convolution
 
-\begin{center}
-    \includegraphics[scale=0.1]{report_line_not_convolved}
-    \captionof{figure}{The line without using the PSF}
-    \label{lineNotConvolved}
-    \includegraphics[scale=0.1]{report_line_convolved}
-    \captionof{figure}{The line using the PSF}
-    \label{lineConvolved}
-\end{center}
+
+\begin{figure}[h]
+    \begin{minipage}[c]{.5\linewidth}
+        \centering
+        \includegraphics[scale=0.1]{report_line_not_convolved}
+        \caption{The line without using the PSF}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.5\linewidth}
+        \centering
+        \includegraphics[scale=0.1]{report_line_convolved}
+        \caption{The line using the PSF}
+    \end{minipage}
+\end{figure}
 
 I will now explain the method I have used to achieve this result. First, I have to choose a star by hand and cut it out to use it as a PSF.
 The dimension of the star cut out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
