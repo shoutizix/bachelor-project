@@ -42,13 +42,13 @@
 \makeacks
 
 \begin{abstract}
-I present an approach to extract the intensity along the satellite streaks that can be found in images that were obtained by OMEGACAM 
-on the VLT Survey Telescope. In this project, I only analyzed the long tracks that were created by high velocity objects, to
-try to get an estimation about their rotation. I used Fourier transform to get the periodicity of the intensity along the tracks.
-Due to the lack of real data about rotation, I first had to create fake streaks with sinusoid intensity and different angles.
-I manually get the tracks to run my code on them, so ideally this project should be integrated with DetectSat~\cite{detectsatRepository} so that all 
-the process can be done automatically. I found very great result with it and run the pipeline on real tracks. By making assumptions about the satellite, 
-like their altitude, I get possible results, but since we don't have access to the real values, we can't say if it is close to reality or not.
+We present an approach to extract the intensity along the satellite streaks that can be found in images that were obtained by OMEGACAM 
+on the VLT Survey Telescope. In this project, we only analyzed the long tracks that were created by high velocity objects, to
+try to get an estimation about their rotation. We used Fourier transform to get the periodicity of the intensity along the tracks.
+Due to the lack of real data about rotation, we first had to create fake streaks with sinusoid intensity and different angles.
+We manually got the tracks to run the code on them, so ideally this project should be integrated with DetectSat~\cite{detectsatRepository} so that all 
+the process can be done automatically. We found very great result with it and run the pipeline on real tracks. By making assumptions about the satellite, 
+like their altitude, We get possible results on real streaks, but since we don't have access to the real values, we can't say if it is close to reality or not.
 \end{abstract}
 
 %\begin{frenchabstract}
@@ -66,20 +66,20 @@ This project is about estimating the rotation of spatial objects detected by the
 we have a lot of flying objects, it can be debris, useful satellites or dead satellites, around the Earth and it becomes more and more
 necessary to have a clear view of all these objects.
 The project of Yann Bouquet "DetectSat"\cite{detectsatRepository} was focused on detection of the satellite tracks on fits files, but with both,
-small (low velocity) and long (high velocity) streaks. To this project I had to focus on the long tracks, so that the variation of intensity
+small (low velocity) and long (high velocity) streaks. For this project we had to focus on the long tracks, so that the variation of intensity
 along the line could be better detected. The rotation estimation can be used to determine which kind of object the streak is and, if it is
 a satellite, it may be used to better find out which one it is. Ideally, this should be run on the lines detected by DetectSat so all the process
 could be done with only the fits file as input.
 \newline
 \newline
-The main challenge is that we don't have access to data about rotation of satellites, so I had to first create my own streaks 
-with sinusoid intensity. This lack of resources is very restrictive, since even if I get a result, we cannot know the precision of this method 
-and we cannot be sure that it is right or completely wrong. This is why I had to begin with creating lines that seem realistic and
+The main challenge is that we don't have access to data about rotation of satellites, so we had to first create our own streaks 
+with sinusoid intensity. This lack of resources is very restrictive, since even if we get a result, we cannot know the precision of this method 
+and we cannot be sure that it is right or completely wrong. This is why we had to begin with creating lines that seem realistic and
 try with random angles.
 \newline
 \newline
-The second part of this project was to retrieve the periodicity of the sinusoidal function along the streaks that I generated, and finally
-try this on real tracks. Since my project does not recognize the lines, I had to find the coordinates of the streaks by hand and give them
+The second part of this project was to retrieve the periodicity of the sinusoidal function along the streaks that we have previously generated, 
+and finally try this on real tracks. Since this project does not recognize the lines, we had to find the coordinates of the streaks by hand and give them
 as input to the pipeline. For this part, there are many factors that can decrease the precision of the pipeline, e.g., if the line crosses a
 really bright star, it gives a peak of intensity and can lead to wrong result, or if the brightness of the streak is too small
 compared to the brightness of the background of the sky on the image. 
@@ -89,39 +89,40 @@ compared to the brightness of the background of the sky on the image.
 \chapter{Inputs}
 %%%%%%%%%%%%%%%%%%%%
 
-In this project, I used fits images that were generated by the OMEGACAM on the VLT Survey Telescope, and I used a script to create a 
-mosaic of 32 images, separated by NaN values, that are 4000x2000 pixels. So the image with all the mosaic's dimension is 16'000x16'000 pixels. 
-A mosaic is approximately 1.5-2 GB of data. 
+In this project, we used fits images that were generated by the OMEGACAM on the VLT Survey Telescope, and we used a script to create a 
+mosaic of $32$ images, separated by NaN values, that are $4'000$$\times$$2'000$ pixels. So the image with all the mosaic's dimension is $16'000$$\times$$16'000$ pixels. 
+A mosaic is approximately $1.5$-$2$ GB of data. 
 \newline
-I principally used the fits file "\emph{OMEGA.2020-02-22T02:11:36.295\_fullfield.fits}", corresponding to the
-captured image February 22, 2020, at 02:11:36, and with the pixels scaled using ZScale to be able to see the streaks as wanted.
+We principally used the fits file "\emph{OMEGA.2020-02-22T02:11:36.295\_fullfield.fits}", corresponding to the
+captured image February 22, 2020, at 02:11:36, and with the pixels scaled using \textbf{ZScale} to be able to see the streaks as wanted.
 \newline
 \begin{center}
     \includegraphics{omega_36.295_report}
-    \captionof{figure}{The main FITS image that I used}
+    \captionof{figure}{The main FITS image that we used}
     \label{mainFits}
 \end{center}
 The pipeline is being run on the entire file, with the coordinates that are relative to the entire file : the origin is at the bottom left of
-the fits file. The first part of this project, which is about line generation, is completely based on this file Figure \ref{mainFits}. I chose
+the fits file. The first part of this project, which is about line generation, is completely based on this file Figure \ref{mainFits}. We chose
 this file because we can clearly see a really interesting track that goes through the image :
 \begin{center}
     \includegraphics[scale=0.06]{omega_36.295_streak_report}
     \captionof{figure}{The interesting streak}
     \label{mainFitsStreak}
 \end{center}
-This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way to test the pipeline with a 
-streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that this streak is actually a debris of the European 
-carrier rocket Ariane 2 ! We know that it is at a geostationary altitude, so \textasciitilde 36'000 [km] and has a speed of \textasciitilde 3065 [m/s]. I will use this
-information later to analyze the coherence of the result obtained by the pipeline.
+This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way 
+to test the pipeline with a streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that 
+this streak is actually a debris of the European carrier rocket Ariane 2 ! We know that it is at a geostationary altitude, 
+so $\sim 36'000\ [km]$ and has a speed of $\sim 3'065\ [\frac{m}{s}]$. We will use this information later to analyze the coherence 
+of the result obtained by the pipeline.
 
 %%%%%%%%%%%%%%%%
 \chapter{Line Generation}
 %%%%%%%%%%%%%%%%
 
-When I started this project, we had no data about rotation of satellites and their corresponding tracks on a file, so I had to first 
-generate streaks on the image myself, to be able to test the pipeline. First, to generate a line I had to choose an existing star in the file
+When we started this project, we had no data about rotation of satellites and their corresponding tracks on a file, so we had to first 
+generate streaks on the image myself, to be able to test the pipeline. First, to generate a line we had to choose an existing star in the file
 and cut it out to have a PSF to convolve my line with. The PSF : "Point Spread Function" is like the quantity of blurring of a point object.
-Here, I had to use it so that my generated line seems more realistic in the image. 
+Here, we had to use it so that my generated line seems more realistic in the image. 
 
 %%Explain the convolution
 
@@ -140,17 +141,17 @@ Here, I had to use it so that my generated line seems more realistic in the imag
     \end{minipage}
 \end{figure}
 
-I will now explain the method I have used to achieve this result. First, I have to choose a star by hand and cut it out to use it as a PSF.
-The dimension of the star cut out is 30px, so I initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
-except at the center of the array, the center line of one pixel of height at the center is set with sinusoid values. Once, I have these two pieces,
-I can convolve the two arrays together to make the final line with an appropriate PSF. I finally rotated the final convolved line by a random angle
+We will now explain the method we have used to achieve this result. First, we have to choose a star by hand and cut it out to use it as a PSF.
+The dimension of the star cut out is 30px, so we initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
+except at the center of the array, the center line of one pixel of height at the center is set with sinusoid values. Once, we have these two pieces,
+we can convolve the two arrays together to make the final line with an appropriate PSF. We finally rotated the final convolved line by a random angle
 and add it to the image by summing up the values with the image's array. The final result of the line in the image is pretty satisfying and coherent.
 \begin{center}
     \includegraphics[scale=0.07]{report_image_line_rotated}
     \captionof{figure}{The generated line on the image}
     \label{lineOnImage}
 \end{center}
-The inconvenience of this method is that I had to choose a star by hand and it will work great for this specific file, if we want to make this code 
+The inconvenience of this method is that we had to choose a star by hand and it will work great for this specific file, if we want to make this code 
 works with another image we have to choose a star from the new file to have a coherent PSF to integrate the line better on it.
 
 
@@ -158,11 +159,28 @@ works with another image we have to choose a star from the new file to have a co
 \chapter{Find the intensity along the track}
 %%%%%%%%%%%%%%%%%%%%%%%%
 
-The implementation covers some of the implementation details of your project.
-This is not intended to be a low-level description of every line of code that
-you wrote but covers the implementation aspects of the projects.
-
-This section is usually 3-5 pages.
+Once the generation part was done, we started the main part of the project that was finding back the periodicity of the previously generated sinusoid 
+intensity streak and finally apply the final pipeline on real tracks.
+\newline
+The method that we used was very simple : We just sum up all the values on the $y$ coordinate for all $x$ coordinate, so it returns an array 
+with a height of one and with a width as long as the streak. Here, the width was found manually, since we had to enter the start and the end coordinates 
+of the track as input for the pipeline, it was trivial to recover the width of the line by using trigonometry. 
+\newline
+Once we have this array with the intensity for each $x$ point, we can consider it as a signal and use the fast Fourier transform (FFT) algorithm \cite{fastFourierTransform} 
+on the array to calculate the discrete Fourier transform (DFT) that can be used to find the frequency of the signal. We also used the inverse FFT
+to try to remove a bit the noise that we get from the image, indeed the line is not isolated from the background of other stars or other streaks 
+that can add more or less noise to the signal. We also choose to use a threshold for the number of period that can be in a track to remove a lot of noise too. 
+We have setted it arbitraly to $100$ repetitions, because the width of a streak is limited to the width of one image of the mosaic, which is 
+$2'000$px. It would mean that we would see a repetition every $20$px, so the frequency of the signal would be $0.05\ [$px$^{-1}]$ and,
+assuming a geostationnary object, this would imply $4.18$ rotation per second and it is very unlikely that an object have such an high 
+rotation rate.
+\newline
+Finally, we used the \textbf{curve fit} function from the scipy library that use the least square optimization to find the frequency of the
+original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will fastly converge 
+into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that interest us, is to 
+divide the number of cycles we found with the Fourier analysis part by the width of the streak. 
+\newline
+Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noise.
 
 
 %%%%%%%%%%%%%%%%%%%%

@@ -2185,6 +2185,7 @@
     <bcf:citekey order="1">templateRef</bcf:citekey>
     <bcf:citekey order="2">detectsatRepository</bcf:citekey>
     <bcf:citekey order="3">detectsatRepository</bcf:citekey>
+    <bcf:citekey order="4">fastFourierTransform</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

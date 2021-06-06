@@ -77,6 +77,80 @@
       \verb https://github.com/YBouquet/detectsat
       \endverb
     \endentry
+    \entry{fastFourierTransform}{article}{}
+      \name{author}{10}{}{%
+        {{hash=449653e3df929c3b555124c581ca5d50}{%
+           family={Cochran},
+           familyi={C\bibinitperiod},
+           given={W.T.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=805a23d6ca48decdb8d2a55a27a14087}{%
+           family={Cooley},
+           familyi={C\bibinitperiod},
+           given={J.W.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=abb9bccb6ac715fdae0ddccbe5f31dcb}{%
+           family={Favin},
+           familyi={F\bibinitperiod},
+           given={D.L.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=90fa5fd53ababaea240933f183f8c7ff}{%
+           family={Helms},
+           familyi={H\bibinitperiod},
+           given={H.D.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=65e613eeb9a1ecbfcece6b8a2980cf70}{%
+           family={Kaenel},
+           familyi={K\bibinitperiod},
+           given={R.A.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=af2069e2798e80e03c5ce5ed537e2e79}{%
+           family={Lang},
+           familyi={L\bibinitperiod},
+           given={W.W.},
+           giveni={W\bibinitperiod}}}%
+        {{hash=bc4cdcd6f45ec1b4751733f0dc8a8776}{%
+           family={Maling},
+           familyi={M\bibinitperiod},
+           given={G.C.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ec5688412e8c9e9cbac7361cad0e0177}{%
+           family={Nelson},
+           familyi={N\bibinitperiod},
+           given={D.E.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=eb2dc8ea37c1231129a889eed1770d64}{%
+           family={Rader},
+           familyi={R\bibinitperiod},
+           given={C.M.},
+           giveni={C\bibinitperiod}}}%
+        {{hash=a193d62a6e7f1a06c2ce1a5e98272ddb}{%
+           family={Welch},
+           familyi={W\bibinitperiod},
+           given={P.D.},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7e2e990d45d7875084cb17cef2120b64}
+      \strng{fullhash}{40ba333a95c53ea9fefcd85f3529e945}
+      \strng{bibnamehash}{40ba333a95c53ea9fefcd85f3529e945}
+      \strng{authorbibnamehash}{40ba333a95c53ea9fefcd85f3529e945}
+      \strng{authornamehash}{7e2e990d45d7875084cb17cef2120b64}
+      \strng{authorfullhash}{40ba333a95c53ea9fefcd85f3529e945}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{number}{10}
+      \field{title}{What is the fast Fourier transform?}
+      \field{volume}{55}
+      \field{year}{1967}
+      \field{pages}{1664\bibrangedash 1674}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1109/PROC.1967.5957
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
