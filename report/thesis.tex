@@ -16,6 +16,7 @@
 \usepackage{xspace}
 \usepackage{caption}
 \usepackage{subfig}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \onehalfspacing
 
@@ -142,9 +143,24 @@ Here, we had to use it so that my generated line seems more realistic in the ima
 \end{figure}
 
 We will now explain the method we have used to achieve this result. First, we have to choose a star by hand and cut it out to use it as a PSF.
-The dimension of the star cut out is 30px, so we initialized an array of height's dimension of 30px and an arbitrary width, with zeros everywhere,
+The dimension of the star cut out is $30$px, so we initialized an array of height's dimension of $30$px and an arbitrary width, with zeros everywhere,
 except at the center of the array, the center line of one pixel of height at the center is set with sinusoid values. Once, we have these two pieces,
-we can convolve the two arrays together to make the final line with an appropriate PSF. We finally rotated the final convolved line by a random angle
+we can convolve the two arrays together to make the final line with an appropriate PSF. 
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{line_before_convolution}
+        \caption{Intensity of each row of the line's array}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{line_after_convolution}
+        \caption{Intensity of each row of the line's array after the convolution}
+    \end{minipage}
+\end{figure}
+\newline
+We finally rotated the final convolved line by a random angle
 and add it to the image by summing up the values with the image's array. The final result of the line in the image is pretty satisfying and coherent.
 \begin{center}
     \includegraphics[scale=0.07]{report_image_line_rotated}
@@ -177,7 +193,7 @@ rotation rate.
 \newline
 Finally, we used the \textbf{curve fit} function from the scipy library that use the least square optimization to find the frequency of the
 original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will fastly converge 
-into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that interest us, is to 
+into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interest us, is to 
 divide the number of cycles we found with the Fourier analysis part by the width of the streak. 
 \newline
 Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noise.

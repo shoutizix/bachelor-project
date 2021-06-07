@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  6 JUN 2021 18:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  7 JUN 2021 15:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,23 +627,23 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 (./thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Trying to load font information for T1+put on input line 31
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Trying to load font information for T1+put on input line 32
 .
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/t1put.fd
 File: t1put.fd 2001/06/04 font definitions for T1/put.
@@ -671,14 +671,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 31.
+LaTeX Info: Redefining \microtypecontext on input line 32.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `basictext'.
-LaTeX Info: Redefining \showhyphens on input line 31.
+LaTeX Info: Redefining \showhyphens on input line 32.
 Package microtype Info: Tracking enabled.
 Package microtype Info: Using default tracking set `smallcaps'.
 Package microtype Info: Adjustment of interword spacing enabled.
@@ -722,11 +722,11 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'thesis.bbl' found.
 
 (./thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 31.
-Package biblatex Info: Reference segment=0 on input line 31.
-LaTeX Info: Redefining \degres on input line 31.
-LaTeX Info: Redefining \dots on input line 31.
-LaTeX Info: Redefining \up on input line 31.
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
+LaTeX Info: Redefining \degres on input line 32.
+LaTeX Info: Redefining \dots on input line 32.
+LaTeX Info: Redefining \up on input line 32.
 \AtBeginShipoutBox=\box49
  (/usr/local/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
@@ -735,7 +735,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 32.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -749,9 +749,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count410
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
  (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
@@ -769,10 +769,10 @@ n <1.7>, but at most version <1.5> allowed
 <EPFLlogo.pdf, id=48, 612.2875pt x 265.99374pt>
 File: EPFLlogo.pdf Graphic file (type pdf)
 <use EPFLlogo.pdf>
-Package pdftex.def Info: EPFLlogo.pdf  used on input line 32.
+Package pdftex.def Info: EPFLlogo.pdf  used on input line 33.
 (pdftex.def)             Requested size: 180.67499pt x 78.48776pt.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 3
-2.
+3.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -800,12 +800,12 @@ ogo.pdf>]
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--86
+Underfull \hbox (badness 10000) in paragraph at lines 66--87
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--86
+Underfull \hbox (badness 10000) in paragraph at lines 66--87
 
  []
 
@@ -818,30 +818,30 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 93.
+(Font)              <12> on input line 94.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 93.
+(Font)              <8> on input line 94.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 93.
+(Font)              <6> on input line 94.
 
-Underfull \hbox (badness 2671) in paragraph at lines 92--99
+Underfull \hbox (badness 2671) in paragraph at lines 93--100
 \T1/put/m/n/12 (+20) We prin-ci-pally used the fits file "\T1/put/m/it/12 (+20)
  OMEGA.2020-02-22T02:11:36.295_fullfield.fits\T1/put/m/n/12 (+20) ",
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 92--99
+Underfull \hbox (badness 10000) in paragraph at lines 93--100
 
  []
 
 <omega_36.295_report.png, id=100, 220.825pt x 220.825pt>
 File: omega_36.295_report.png Graphic file (type png)
 <use omega_36.295_report.png>
-Package pdftex.def Info: omega_36.295_report.png  used on input line 100.
+Package pdftex.def Info: omega_36.295_report.png  used on input line 101.
 (pdftex.def)             Requested size: 220.82445pt x 220.82445pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 101.
+(caption)                particular \caption on input line 102.
 See the caption package documentation for explanation.
 
 [7
@@ -850,17 +850,17 @@ See the caption package documentation for explanation.
 <omega_36.295_streak_report.png, id=112, 8463.62pt x 1951.29pt>
 File: omega_36.295_streak_report.png Graphic file (type png)
 <use omega_36.295_streak_report.png>
-Package pdftex.def Info: omega_36.295_streak_report.png  used on input line 108
+Package pdftex.def Info: omega_36.295_streak_report.png  used on input line 109
 .
 (pdftex.def)             Requested size: 507.7953pt x 117.07234pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 109.
+(caption)                particular \caption on input line 110.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (42.79588pt too wide) in paragraph at lines 108--109
+Overfull \hbox (42.79588pt too wide) in paragraph at lines 109--110
  [] 
  []
 
@@ -869,36 +869,47 @@ Chapter 3.
 <report_line_not_convolved.png, id=120, 360.34625pt x 1883.035pt>
 File: report_line_not_convolved.png Graphic file (type png)
 <use report_line_not_convolved.png>
-Package pdftex.def Info: report_line_not_convolved.png  used on input line 133.
+Package pdftex.def Info: report_line_not_convolved.png  used on input line 134.
 
 (pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
 <report_line_convolved.png, id=121, 360.34625pt x 1883.035pt>
 File: report_line_convolved.png Graphic file (type png)
 <use report_line_convolved.png>
-Package pdftex.def Info: report_line_convolved.png  used on input line 139.
+Package pdftex.def Info: report_line_convolved.png  used on input line 140.
 (pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
 
-Overfull \hbox (2.0521pt too wide) in paragraph at lines 131--142
+Overfull \hbox (2.0521pt too wide) in paragraph at lines 132--143
 []$[]$  $[]$ 
  []
 
+<line_before_convolution.png, id=122, 391.4625pt x 252.945pt>
+File: line_before_convolution.png Graphic file (type png)
+<use line_before_convolution.png>
+Package pdftex.def Info: line_before_convolution.png  used on input line 152.
+(pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
+<line_after_convolution.png, id=124, 391.4625pt x 252.945pt>
+File: line_after_convolution.png Graphic file (type png)
+<use line_after_convolution.png>
+Package pdftex.def Info: line_after_convolution.png  used on input line 158.
+(pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
 [9
 
  <./report_line_not_convolved.png (PNG copy)> <./report_line_convolved.png (PNG
  copy)>]
-<report_image_line_rotated.png, id=127, 1535.7375pt x 2106.87125pt>
+<report_image_line_rotated.png, id=130, 1535.7375pt x 2106.87125pt>
 File: report_image_line_rotated.png Graphic file (type png)
 <use report_image_line_rotated.png>
-Package pdftex.def Info: report_image_line_rotated.png  used on input line 150.
+Package pdftex.def Info: report_image_line_rotated.png  used on input line 166.
 
 (pdftex.def)             Requested size: 107.5126pt x 147.49605pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 151.
+(caption)                particular \caption on input line 167.
 See the caption package documentation for explanation.
 
-[10 <./report_image_line_rotated.png>]
+[10 <./line_before_convolution.png> <./line_after_convolution.png> <./report_im
+age_line_rotated.png>]
 Chapter 4.
 [11
 
@@ -916,7 +927,7 @@ Chapter 7.
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-22.
+38.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -924,30 +935,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
  [16
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
 
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 239.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 239.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 255.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 255.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A255C962EEFAFC4BA633F65C289E7077;528.
+(rerunfilecheck)             Checksum: 967AC547DDFB198F7BD41A43FB50EB58;528.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 17948 strings out of 480608
- 315631 string characters out of 5903630
- 1057296 words of memory out of 5000000
- 33419 multiletter control sequences out of 15000+600000
- 603262 words of font info for 130 fonts, out of 8000000 for 9000
+ 17983 strings out of 480608
+ 316270 string characters out of 5903630
+ 1057227 words of memory out of 5000000
+ 33437 multiletter control sequences out of 15000+600000
+ 617830 words of font info for 142 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 49i,9n,54p,863b,1718s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,10n,54p,863b,1718s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
@@ -961,10 +972,10 @@ st/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/cm-super/sfss2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (16 pages, 15615048 bytes).
+Output written on thesis.pdf (16 pages, 15690996 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
- 179 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 19063 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 23681 words of extra memory for PDF output out of 24883 (max. 10000000)
 
