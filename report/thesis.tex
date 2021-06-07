@@ -110,7 +110,7 @@ this file because we can clearly see a really interesting track that goes throug
     \captionof{figure}{The interesting streak}
     \label{mainFitsStreak}
 \end{center}
-This track on Figure \ref{mainFitsStreak} was clearly visible and the variation of intensity can also be notified, so it was a great way 
+This track on Figure \ref{mainFitsStreak}, the one that goes through four blocks, was clearly visible and the variation of intensity can also be notified, so it was a great way 
 to test the pipeline with a streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that 
 this streak is actually a debris of the European carrier rocket Ariane 2 ! We know that it is at a geostationary altitude, 
 so $\sim 36'000\ [km]$ and has a speed of $\sim 3'065\ [\frac{m}{s}]$. We will use this information later to analyze the coherence 
@@ -178,10 +178,13 @@ works with another image we have to choose a star from the new file to have a co
 Once the generation part was done, we started the main part of the project that was finding back the periodicity of the previously generated sinusoid 
 intensity streak and finally apply the final pipeline on real tracks.
 \newline
+\newline
 The method that we used was very simple : We just sum up all the values on the $y$ coordinate for all $x$ coordinate, so it returns an array 
 with a height of one and with a width as long as the streak. Here, the width was found manually, since we had to enter the start and the end coordinates 
-of the track as input for the pipeline, it was trivial to recover the width of the line by using trigonometry. 
-\newline
+of the track as input for the pipeline, it was trivial to recover the width of the line, even when the line was not horizontal, by using trigonometry. 
+\begin{center}
+    $ width\_of\_the\_line = \frac{end\_line\_x - start\_line\_x}{cos(angle\_line\_in\_radian)}$
+\end{center}
 Once we have this array with the intensity for each $x$ point, we can consider it as a signal and use the fast Fourier transform (FFT) algorithm \cite{fastFourierTransform} 
 on the array to calculate the discrete Fourier transform (DFT) that can be used to find the frequency of the signal. We also used the inverse FFT
 to try to remove a bit the noise that we get from the image, indeed the line is not isolated from the background of other stars or other streaks 
