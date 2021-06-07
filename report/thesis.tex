@@ -49,7 +49,7 @@ try to get an estimation about their rotation. We used Fourier transform to get 
 Due to the lack of real data about rotation, we first had to create fake streaks with sinusoid intensity and different angles.
 We manually got the tracks to run the code on them, so ideally this project should be integrated with DetectSat~\cite{detectsatRepository} so that all 
 the process can be done automatically. We found very great result with it and run the pipeline on real tracks. By making assumptions about the satellite, 
-like their altitude, We get possible results on real streaks, but since we don't have access to the real values, we can't say if it is close to reality or not.
+like their altitude, we get possible results on real streaks, but since we don't have access to the real values, we can't say if it is close to reality or not.
 \end{abstract}
 
 %\begin{frenchabstract}
@@ -183,23 +183,23 @@ The method that we used was very simple : We just sum up all the values on the $
 with a height of one and with a width as long as the streak. Here, the width was found manually, since we had to enter the start and the end coordinates 
 of the track as input for the pipeline, it was trivial to recover the width of the line, even when the line was not horizontal, by using trigonometry. 
 \begin{center}
-    $ width\_of\_the\_line = \frac{end\_line\_x - start\_line\_x}{cos(angle\_line\_in\_radian)}$
+    $ \displaystyle width\_of\_the\_line = \frac{end\_line\_x - start\_line\_x}{cos(angle\_line\_in\_radian)}$
 \end{center}
-Once we have this array with the intensity for each $x$ point, we can consider it as a signal and use the fast Fourier transform (FFT) algorithm \cite{fastFourierTransform} 
+Once we have this array with the intensity of each $x$ point, we can consider it as a signal and use the fast Fourier transform (FFT) algorithm \cite{fastFourierTransform} 
 on the array to calculate the discrete Fourier transform (DFT) that can be used to find the frequency of the signal. We also used the inverse FFT
-to try to remove a bit the noise that we get from the image, indeed the line is not isolated from the background of other stars or other streaks 
-that can add more or less noise to the signal. We also choose to use a threshold for the number of period that can be in a track to remove a lot of noise too. 
-We have setted it arbitraly to $100$ repetitions, because the width of a streak is limited to the width of one image of the mosaic, which is 
+to try to remove a bit the noise that we get from the image; indeed the line is not isolated from the background of other stars or other streaks 
+that can add more or less noise to the signal. We also choose to use a threshold for the number of periods that can be in a track to remove a lot of noise too. 
+We have set it arbitrarily to $100$ repetitions, because the width of a streak is limited to the width of one image of the mosaic, which is 
 $2'000$px. It would mean that we would see a repetition every $20$px, so the frequency of the signal would be $0.05\ [$px$^{-1}]$ and,
-assuming a geostationnary object, this would imply $4.18$ rotation per second and it is very unlikely that an object have such an high 
+assuming a geostationary object, this would imply $4.18$ rotation per second and it is very unlikely that an object has such a high 
 rotation rate.
 \newline
 Finally, we used the \textbf{curve fit} function from the scipy library that use the least square optimization to find the frequency of the
-original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will fastly converge 
-into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interest us, is to 
-divide the number of cycles we found with the Fourier analysis part by the width of the streak. 
+original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will converge 
+ fast into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
+divide the number of cycles that we found with the Fourier analysis part, by the width of the streak. 
 \newline
-Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noise.
+Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noises.
 
 
 %%%%%%%%%%%%%%%%%%%%
