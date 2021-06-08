@@ -11,7 +11,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Line Generation}{9}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Find the intensity along the track}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Find the Intensity Along the Track}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Final Result}{13}{chapter.5}%
 \defcounter {refsection}{0}\relax 
