@@ -110,8 +110,8 @@ this file because we can clearly see a really interesting track that goes throug
     \captionof{figure}{The interesting streak}
     \label{mainFitsStreak}
 \end{center}
-This track on Figure \ref{mainFitsStreak}, the one that goes through four blocks, was clearly visible and the variation of intensity can also be notified, so it was a great way 
-to test the pipeline with a streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that 
+This track on Figure \ref{mainFitsStreak}, the one that goes through four blocks, was clearly visible and the variation of intensity can also be notified, 
+so it was a great way to test the pipeline with a streak that is not too difficult. Thanks to Marcellin, he could identify this and it turned out that 
 this streak is actually a debris of the European carrier rocket Ariane 2 ! We know that it is at a geostationary altitude, 
 so $\sim 36'000\ [km]$ and has a speed of $\sim 3'065\ [\frac{m}{s}]$. We will use this information later to analyze the coherence 
 of the result obtained by the pipeline.
@@ -160,13 +160,14 @@ we can convolve the two arrays together to make the final line with an appropria
     \end{minipage}
 \end{figure}
 \newline
-We finally rotated the final convolved line by a random angle
-and add it to the image by summing up the values with the image's array. The final result of the line in the image is pretty satisfying and coherent.
+We finally rotated the final convolved line by a random angle and add it to the image by summing up the values with the image's array. 
 \begin{center}
     \includegraphics[scale=0.07]{report_image_line_rotated}
     \captionof{figure}{The generated line on the image}
     \label{lineOnImage}
 \end{center}
+The final result of the line in the image is pretty satisfying and coherent, as we can see on Figure \ref{lineOnImage}.
+\newline
 The inconvenience of this method is that we had to choose a star by hand and it will work great for this specific file, if we want to make this code 
 works with another image we have to choose a star from the new file to have a coherent PSF to integrate the line better on it.
 
@@ -194,28 +195,78 @@ $2'000$px. It would mean that we would see a repetition every $20$px, so the fre
 assuming a geostationary object, this would imply $4.18$ rotation per second and it is very unlikely that an object has such a high 
 rotation rate.
 \newline
-Finally, we used the \textbf{curve fit} function from the scipy library that use the least square optimization to find the frequency of the
+\newline
+Finally, we used the "\textbf{curve\_fit}" function from the scipy library that use the least square optimization to find the frequency of the
 original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will converge 
- fast into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
+fast into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
 divide the number of cycles that we found with the Fourier analysis part, by the width of the streak. 
 \newline
 Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noises.
+\newline
+\newline
+We cannot use the result directly found with the pipeline explained just above, because it expresses the frequency by pixel, to be able to
+compare it with a reference value as we would like, we have to convert it to spatial scale e.g., for the frequency $[s^{-1}]$. To do this
+we had to make some assumptions : 
+\begin{enumerate}
+    \item The flying object is geostationary
+    \begin{itemize}
+    \item So the altitude would be $\sim 36'000'000\ [m]$
+    \item With a speed of $3'065\ [\frac{m}{s}]$
+    \end{itemize}
+    \item The fits file has a scale of $0.21\ [\frac{arcsec}{pixel}]$
+\end{enumerate}
+With these elements, we can find the rotation rate easily :
+\begin{center}
+$one\_cycle\_in\_pixel = \frac{1}{frequency\_found}\ [pixel]$
 
+$arcsec\_by\_cycle = 0.21 \times one\_cycle\_in\_pixel\ [arcsec]$
+
+$distance\_one\_cycle = 36'000'000 \times (\frac{\pi}{180} \times \frac{arcsec\_by\_cycle}{3'600})\ [m]$
+
+$rotation\_rate = \frac{3'065}{distance\_one\_cycle}\ [s^{-1}]$
+\end{center}
+This rotation rate, which is the number of rotation of the object in one second, can be used to compare what we have found with 
+the existing information about the objects that we will detect.
+
+\section{Result on Simulated data}
+Running the pipeline on a line that we created previously gives pretty satisfying results. Here we can see the result with a basic case with an horizontal line 
+but that does cross a star or bright object.
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{fit_find_line_horizontal}
+        \caption{Total intensity by x coordinate on the line}
+        \label{graphHorizontalLine}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_crossed_line}
+        \caption{The star that is crossed by the line}
+    \end{minipage}
+\end{figure}
+
+As we can see on Figure \ref{graphHorizontalLine}, the fitted function seems really close to the data even if there is a peak of intensity
+at some point, because of the star crossed. It is a good sign that our pipeline can resist, even if it is a small amount of noise here.
 
 %%%%%%%%%%%%%%%%%%%%
-\chapter{Evaluation}
+\chapter{Cast the frequency}
 %%%%%%%%%%%%%%%%%%%%
 
-In the evaluation you convince the reader that your design works as intended.
-Describe the evaluation setup, the designed experiments, and how the
-experiments showcase the individual points you want to prove.
+We cannot use the result directly found with the pipeline explained just above, because it expresses the frequency by pixel, to be able to
+compare it with a reference value as we would like, we have to convert it to spatial scale e.g., for the frequency $[s^{-1}]$.
+\newline
 
-This section is usually 5-10 pages.
 
 
 %%%%%%%%%%%%%%%%%%%%%%
-\chapter{Related Work}
+\chapter{Final Result}
 %%%%%%%%%%%%%%%%%%%%%%
+
+
+Running the pipeline on a line that we created previously, takes approximately less than 10 seconds, by block of the mosaic, using a 1,8 GHz Intel Core i5 dual core
+on a MacBook Air 2017. 
+
 
 The related work section covers closely related work. Here you can highlight
 the related work, how it solved the problem, and why it solved a different

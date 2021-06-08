@@ -13,10 +13,12 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Find the intensity along the track}{11}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Evaluation}{13}{chapter.5}%
+\contentsline {section}{\numberline {4.1}Result on Simulated data}{13}{section.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Related Work}{14}{chapter.6}%
+\contentsline {chapter}{\numberline {5}Cast the frequency}{14}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Conclusion}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {6}Final Result}{15}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{16}{section*.6}%
+\contentsline {chapter}{\numberline {7}Conclusion}{16}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{17}{section*.7}%
