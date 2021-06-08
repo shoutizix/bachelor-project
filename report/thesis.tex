@@ -242,7 +242,7 @@ the existing information about the objects that we will detect.
 Running the pipeline on a line that we created previously, takes approximately less than 10 seconds, by block of the mosaic, using a 1,8 GHz Intel Core i5 dual core
 on a MacBook Air 2017. 
 
-\section{Result on Simulated data}
+\section{Result on Generated streak}
 When running it on the generated lines that we talked about above, the pipeline gives pretty satisfying results. Here we can see the result 
 with a basic case with an horizontal line but that does cross a star or bright object.
 \begin{figure}[h]
@@ -270,7 +270,7 @@ Obviously, using the pipeline on this kind of tracks will give an imprecise resu
 \newline
 \newline
 Now let's see the result with a more realistic rotated line that does not cross any specially bright object that could introduce some 
-more noises.
+more noises. The streak is also very bright, so we can say that this is actually ideal conditions.
 \begin{figure}[h]
     \begin{minipage}[c]{.47\linewidth}
         \centering
@@ -285,10 +285,22 @@ more noises.
         \caption{The star that is crossed by the line}
     \end{minipage}
 \end{figure}
+\newline
+We can see that the frequency of the fitted function seems to approximate reasonably well the data. The pipeline finds $0.009962$ for the
+frequency, it is still close to the expected value so we can say that this result is really satisfying. The error of the computed outcome
+is of $0.38\%$. This result shows that, when the streak is bright enough, the pipeline performs amazingly well on the generated lines that
+we have created ourself.
+
+\section{Result on Real streak}
+In this part, we used the track that can be seen in Figure \ref{mainFitsStreak} to test the final pipeline. Because when we were working
+on this project, it was the only streak that we have successfully identified. This track is a debris from Ariane 2, we knew it thanks to
+PredicSat that also compute information about it, like the altitude and %%%% VOIR A MODIFIER
 
 %%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
 %%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%PARLER QUE DANS LA VRAIE VIE CEST PAS SINUSOIDAL
 
 In the conclusion you repeat the main result and finalize the discussion of
 your project. Mention the core results and why as well as how your system
