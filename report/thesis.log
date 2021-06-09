@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  9 JUN 2021 14:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  9 JUN 2021 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -624,7 +624,11 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count403
 \l__pdf_internal_box=\box47
 )
-(./thesis.aux)
+(./thesis.aux
+
+LaTeX Warning: Label `graphHorizontalLine' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -811,12 +815,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--87
+Underfull \hbox (badness 10000) in paragraph at lines 67--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--87
+Underfull \hbox (badness 10000) in paragraph at lines 67--88
 
  []
 
@@ -825,24 +829,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--87
 ] [6]
 Chapter 2.
 
-Underfull \hbox (badness 2671) in paragraph at lines 93--100
+Underfull \hbox (badness 2671) in paragraph at lines 94--101
 \T1/put/m/n/12 (+20) We prin-ci-pally used the fits file "\T1/put/m/it/12 (+20)
  OMEGA.2020-02-22T02:11:36.295_fullfield.fits\T1/put/m/n/12 (+20) ",
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--100
+Underfull \hbox (badness 10000) in paragraph at lines 94--101
 
  []
 
 <omega_36.295_report.png, id=105, 220.825pt x 220.825pt>
 File: omega_36.295_report.png Graphic file (type png)
 <use omega_36.295_report.png>
-Package pdftex.def Info: omega_36.295_report.png  used on input line 101.
+Package pdftex.def Info: omega_36.295_report.png  used on input line 102.
 (pdftex.def)             Requested size: 220.82445pt x 220.82445pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 102.
+(caption)                particular \caption on input line 103.
 See the caption package documentation for explanation.
 
 [7
@@ -851,17 +855,17 @@ See the caption package documentation for explanation.
 <omega_36.295_streak_report.png, id=117, 8463.62pt x 1951.29pt>
 File: omega_36.295_streak_report.png Graphic file (type png)
 <use omega_36.295_streak_report.png>
-Package pdftex.def Info: omega_36.295_streak_report.png  used on input line 109
+Package pdftex.def Info: omega_36.295_streak_report.png  used on input line 110
 .
 (pdftex.def)             Requested size: 507.7953pt x 117.07234pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 110.
+(caption)                particular \caption on input line 111.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (42.79588pt too wide) in paragraph at lines 109--110
+Overfull \hbox (42.79588pt too wide) in paragraph at lines 110--111
  [] 
  []
 
@@ -870,28 +874,28 @@ Chapter 3.
 <report_line_not_convolved.png, id=125, 360.34625pt x 1883.035pt>
 File: report_line_not_convolved.png Graphic file (type png)
 <use report_line_not_convolved.png>
-Package pdftex.def Info: report_line_not_convolved.png  used on input line 134.
+Package pdftex.def Info: report_line_not_convolved.png  used on input line 135.
 
 (pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
 <report_line_convolved.png, id=126, 360.34625pt x 1883.035pt>
 File: report_line_convolved.png Graphic file (type png)
 <use report_line_convolved.png>
-Package pdftex.def Info: report_line_convolved.png  used on input line 140.
+Package pdftex.def Info: report_line_convolved.png  used on input line 141.
 (pdftex.def)             Requested size: 36.03673pt x 188.31453pt.
 
-Overfull \hbox (2.0521pt too wide) in paragraph at lines 132--143
+Overfull \hbox (2.0521pt too wide) in paragraph at lines 133--144
 []$[]$  $[]$ 
  []
 
 <line_before_convolution.png, id=127, 391.4625pt x 252.945pt>
 File: line_before_convolution.png Graphic file (type png)
 <use line_before_convolution.png>
-Package pdftex.def Info: line_before_convolution.png  used on input line 152.
+Package pdftex.def Info: line_before_convolution.png  used on input line 153.
 (pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
 <line_after_convolution.png, id=129, 391.4625pt x 252.945pt>
 File: line_after_convolution.png Graphic file (type png)
 <use line_after_convolution.png>
-Package pdftex.def Info: line_after_convolution.png  used on input line 158.
+Package pdftex.def Info: line_after_convolution.png  used on input line 159.
 (pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
 [9
 
@@ -900,38 +904,51 @@ Package pdftex.def Info: line_after_convolution.png  used on input line 158.
 <report_image_line_rotated.png, id=135, 1535.7375pt x 2106.87125pt>
 File: report_image_line_rotated.png Graphic file (type png)
 <use report_image_line_rotated.png>
-Package pdftex.def Info: report_image_line_rotated.png  used on input line 165.
+Package pdftex.def Info: report_image_line_rotated.png  used on input line 166.
 
 (pdftex.def)             Requested size: 107.5126pt x 147.49605pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 166.
+(caption)                particular \caption on input line 167.
 See the caption package documentation for explanation.
 
 [10 <./line_before_convolution.png> <./line_after_convolution.png> <./report_im
 age_line_rotated.png>]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--190
+Underfull \hbox (badness 10000) in paragraph at lines 184--191
+
+ []
+
+<find_line_80_deg.png, id=146, 391.4625pt x 252.945pt>
+File: find_line_80_deg.png Graphic file (type png)
+<use find_line_80_deg.png>
+Package pdftex.def Info: find_line_80_deg.png  used on input line 202.
+(pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
+<inverse_find_line_80_deg.png, id=147, 391.4625pt x 252.945pt>
+File: inverse_find_line_80_deg.png Graphic file (type png)
+<use inverse_find_line_80_deg.png>
+Package pdftex.def Info: inverse_find_line_80_deg.png  used on input line 209.
+(pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--214
+Underfull \hbox (badness 10000) in paragraph at lines 194--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--214
-
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+put on input line 2
-17.
+34.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1put.fd
 File: ts1put.fd 2001/06/04 font definitions for TS1/put.
 )
@@ -939,118 +956,113 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `put' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [12]
+ [12 <./find_line_80_deg.png> <./inverse_find_line_80_deg.png>] [13]
 Chapter 5.
-<fit_find_line_horizontal.png, id=159, 391.4625pt x 252.945pt>
+<fit_find_line_horizontal.png, id=170, 391.4625pt x 252.945pt>
 File: fit_find_line_horizontal.png Graphic file (type png)
 <use fit_find_line_horizontal.png>
-Package pdftex.def Info: fit_find_line_horizontal.png  used on input line 254.
+Package pdftex.def Info: fit_find_line_horizontal.png  used on input line 271.
 (pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
-<report_crossed_line.png, id=160, 587.19376pt x 211.79124pt>
+<report_crossed_line.png, id=171, 587.19376pt x 211.79124pt>
 File: report_crossed_line.png Graphic file (type png)
 <use report_crossed_line.png>
-Package pdftex.def Info: report_crossed_line.png  used on input line 261.
+Package pdftex.def Info: report_crossed_line.png  used on input line 278.
 (pdftex.def)             Requested size: 293.59616pt x 105.89536pt.
-<fit_find_line_80_deg.png, id=162, 391.4625pt x 252.945pt>
+<fit_find_line_80_deg.png, id=173, 391.4625pt x 252.945pt>
 File: fit_find_line_80_deg.png Graphic file (type png)
 <use fit_find_line_80_deg.png>
-Package pdftex.def Info: fit_find_line_80_deg.png  used on input line 280.
+Package pdftex.def Info: fit_find_line_80_deg.png  used on input line 297.
 (pdftex.def)             Requested size: 195.73076pt x 126.47218pt.
-<report_rotated_line_on_image_result.png, id=163, 536.0025pt x 1943.26pt>
+<report_rotated_line_on_image_result.png, id=174, 536.0025pt x 1943.26pt>
 File: report_rotated_line_on_image_result.png Graphic file (type png)
 <use report_rotated_line_on_image_result.png>
 Package pdftex.def Info: report_rotated_line_on_image_result.png  used on input
- line 287.
+ line 304.
 (pdftex.def)             Requested size: 53.60338pt x 194.33739pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--296
+Underfull \hbox (badness 10000) in paragraph at lines 283--313
 
  []
 
-[13
+[14
 
  <./fit_find_line_horizontal.png> <./report_crossed_line.png>]
-<report_part_1_line_graph.png, id=175, 387.4475pt x 252.945pt>
+<report_part_1_line_graph.png, id=184, 387.4475pt x 252.945pt>
 File: report_part_1_line_graph.png Graphic file (type png)
 <use report_part_1_line_graph.png>
-Package pdftex.def Info: report_part_1_line_graph.png  used on input line 307.
+Package pdftex.def Info: report_part_1_line_graph.png  used on input line 324.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_1_line.png, id=176, 2020.54875pt x 571.13374pt>
+<part_1_line.png, id=185, 2020.54875pt x 571.13374pt>
 File: part_1_line.png Graphic file (type png)
 <use part_1_line.png>
-Package pdftex.def Info: part_1_line.png  used on input line 314.
+Package pdftex.def Info: part_1_line.png  used on input line 331.
 (pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
-<report_part_2_line_graph.png, id=177, 387.4475pt x 252.945pt>
+<report_part_2_line_graph.png, id=186, 387.4475pt x 252.945pt>
 File: report_part_2_line_graph.png Graphic file (type png)
 <use report_part_2_line_graph.png>
-Package pdftex.def Info: report_part_2_line_graph.png  used on input line 322.
+Package pdftex.def Info: report_part_2_line_graph.png  used on input line 339.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_2_line.png, id=178, 2020.54875pt x 571.13374pt>
+<part_2_line.png, id=187, 2020.54875pt x 571.13374pt>
 File: part_2_line.png Graphic file (type png)
 <use part_2_line.png>
-Package pdftex.def Info: part_2_line.png  used on input line 329.
+Package pdftex.def Info: part_2_line.png  used on input line 346.
 (pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
-<report_part_3_line_graph.png, id=179, 387.4475pt x 252.945pt>
+<report_part_3_line_graph.png, id=188, 387.4475pt x 252.945pt>
 File: report_part_3_line_graph.png Graphic file (type png)
 <use report_part_3_line_graph.png>
-Package pdftex.def Info: report_part_3_line_graph.png  used on input line 336.
+Package pdftex.def Info: report_part_3_line_graph.png  used on input line 353.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_3_line.png, id=180, 1745.52126pt x 372.39125pt>
+<part_3_line.png, id=189, 1745.52126pt x 372.39125pt>
 File: part_3_line.png Graphic file (type png)
 <use part_3_line.png>
-Package pdftex.def Info: part_3_line.png  used on input line 343.
+Package pdftex.def Info: part_3_line.png  used on input line 360.
 (pdftex.def)             Requested size: 872.7585pt x 186.19516pt.
-<report_part_4_line_graph.png, id=181, 387.4475pt x 252.945pt>
+<report_part_4_line_graph.png, id=190, 387.4475pt x 252.945pt>
 File: report_part_4_line_graph.png Graphic file (type png)
 <use report_part_4_line_graph.png>
-Package pdftex.def Info: report_part_4_line_graph.png  used on input line 350.
+Package pdftex.def Info: report_part_4_line_graph.png  used on input line 367.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_4_line.png, id=182, 1930.21124pt x 384.43625pt>
+<part_4_line.png, id=191, 1930.21124pt x 384.43625pt>
 File: part_4_line.png Graphic file (type png)
 <use part_4_line.png>
-Package pdftex.def Info: part_4_line.png  used on input line 357.
+Package pdftex.def Info: part_4_line.png  used on input line 374.
 (pdftex.def)             Requested size: 965.10327pt x 192.21765pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--379
+Underfull \hbox (badness 10000) in paragraph at lines 317--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--379
+Underfull \hbox (badness 10000) in paragraph at lines 317--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--379
+Underfull \hbox (badness 10000) in paragraph at lines 317--395
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--379
+Underfull \hbox (badness 10000) in paragraph at lines 317--395
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 300--379
-
- []
-
-[14 <./fit_find_line_80_deg.png> <./report_rotated_line_on_image_result.png>]
+[15 <./fit_find_line_80_deg.png> <./report_rotated_line_on_image_result.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15 <./report_part_1_line_graph.png> <./part_1_line.png> <./report_part_2_line_
-graph.png> <./part_2_line.png>] [16 <./report_part_3_line_graph.png> <./part_3_
-line.png> <./report_part_4_line_graph.png> <./part_4_line.png>] [17]
+[16 <./report_part_1_line_graph.png> <./part_1_line.png> <./report_part_2_line_
+graph.png> <./part_2_line.png>] [17 <./report_part_3_line_graph.png> <./part_3_
+line.png> <./report_part_4_line_graph.png> <./part_4_line.png>] [18]
 Chapter 6.
-[18
+[19
 
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-94.
+] [20]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+26.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1058,28 +1070,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
- [19
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
+
+[21
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
-
-(./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
+ (./thesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4BAEF5F1403D9AE71590CC34CF0342CE;624.
+(rerunfilecheck)             Checksum: E502727E68BDD79CC4A0623DF3ED5806;624.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18137 strings out of 480608
- 319461 string characters out of 5903630
- 1064828 words of memory out of 5000000
- 33557 multiletter control sequences out of 15000+600000
- 630857 words of font info for 158 fonts, out of 8000000 for 9000
+ 18157 strings out of 480608
+ 319893 string characters out of 5903630
+ 1064868 words of memory out of 5000000
+ 33571 multiletter control sequences out of 15000+600000
+ 631178 words of font info for 160 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  49i,10n,54p,863b,1761s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
@@ -1096,10 +1112,10 @@ mf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2020/texmf-dist
 type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfss2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (19 pages, 19938486 bytes).
+Output written on thesis.pdf (21 pages, 19969898 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 500000)
- 25285 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 299 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 53 named destinations out of 1000 (max. 500000)
+ 25295 words of extra memory for PDF output out of 29859 (max. 10000000)
 

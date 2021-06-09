@@ -38,7 +38,8 @@
     my gratitude to Yann Bouquet who helped me with pleasure when I had questions. Finally, I also would like to especially thank 
     Alexandre Di Piazza and Marcellin Feasson with whom I have collaborated through all the semester in different ways.
     \newline 
-    Thanks a lot to Prof. Mathias Payer for the thesis template that I used to write this report~\cite{templateRef}
+    Thanks a lot to Prof. Mathias Payer for the thesis template that I used to write this report~\cite{templateRef} and also
+    Guillaume Vullioud who helped me a lot with LaTeX.
 }
 \makeacks
 
@@ -193,7 +194,23 @@ of the track as input for the pipeline, it was trivial to recover the width of t
 Once we have this array with the intensity of each $x$ point, we can consider it as a signal and use the fast Fourier transform (FFT) algorithm \cite{fastFourierTransform} 
 on the array to calculate the discrete Fourier transform (DFT) that can be used to find the frequency of the signal. We also used the inverse FFT
 to try to remove a bit the noise that we get from the image; indeed the line is not isolated from the background of other stars or other streaks 
-that can add more or less noise to the signal. We also choose to use a threshold for the number of periods that can be in a track to remove a lot of noise too. 
+that can add more or less noise to the signal. 
+\newline
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{find_line_80_deg}
+        \caption{The original signal}
+        \label{graphHorizontalLine}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{inverse_find_line_80_deg}
+        \caption{The signal after the inverse FFT}
+    \end{minipage}
+\end{figure}
+We also choose to use a threshold for the number of periods that can be in a track to remove a lot of noise too. 
 We have set it arbitrarily to $100$ repetitions, because the width of a streak is limited to the width of one image of the mosaic, which is 
 $2'000$px. It would mean that we would see a repetition every $20$px, so the frequency of the signal would be $0.05\ [$px$^{-1}]$ and,
 assuming a geostationary object, this would imply $4.18$ rotation per second and it is very unlikely that an object has such a high 
@@ -363,7 +380,6 @@ is good news, because it corresponds well with our assumption about the geostati
 \newline
 \newline
 \newline
-\newline
 We get the same result for the rotation rate for the first, third and fourth part of the track (Figure \ref{graphPart1Track}, 
 Figure \ref{graphPart3Track}, Figure \ref{graphPart4Track}) : $\sim 1.20\ [s^{-1}]$. Only the third part outputs a rotation rate 
 of $\sim 0.6\ [s^{-1}]$. We can observe that on the graphic in Figure \ref{graphPart2Track} that the data are a bit noisy, it is hard
@@ -382,11 +398,27 @@ is plausible for this type of object.
 \chapter{Conclusion}
 %%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%PARLER QUE DANS LA VRAIE VIE CEST PAS SINUSOIDAL
+This project aims to estimate the rotation speed of the different spatial objects that are represented as streaks in images. Ideally,
+this could be use to determine if the object is a satellite, or if the rotation is too fast so this would be a debris. We could use 
+this pipeline to classify the tracks.
+\newline
+In reality, we could not tell if this require some modifications or if the current state of the pipeline is precise enough, because of 
+the lack of real information on the subject. This was the main concern when doing this project. We were not able to find any rotation speed of any object that we encountered when we were
+exploring images. The only streak that we have successfully matched with a known object was the main track (Figure \ref{mainFitsStreak}),
+that was a debris of the European carrier rocket Ariane 2. The result we obtained for this streak seems possible but we cannot say surely
+that this is actually completely accurate, and how precise the outcome is. Also the real tracks may not produce a perfectly sinusoidal intensity, so this could also lead
+to imprecision when using this system. The real streaks can also be really darker that the one that we studied, so the noise will have a more 
+significant weight, thus the result of the pipeline could be pretty uncertain.
+\newline
+This was the reason why we started by producing our own streaks, so that we could modify the frequency as we wanted and have the real
+value to compare it with the obtained one. This part works well and produces pretty realistic tracks, but it has the disadvantage to be
+dependent of a custom PSF that we have to find for each image. Otherwise, this could maybe be used to train an machine learning algorithm
+to detect satellite as it can generate streaks where we want to. 
+\newline
+The second part of the project, that we discussed in Chapter \ref{findIntensityChapter}, could ideally be used combined with DetectSat,
+so that the line that are detected are automatically given as input to the pipeline. It is indeed useful to directly have information
+about the track that we have detected, as it can be used later to classify the kind of object that the streak is. 
 
-In the conclusion you repeat the main result and finalize the discussion of
-your project. Mention the core results and why as well as how your system
-advances the status quo.
 
 \cleardoublepage
 \phantomsection
