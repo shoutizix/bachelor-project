@@ -399,28 +399,28 @@ is plausible for this type of object.
 %%%%%%%%%%%%%%%%%%%%
 
 This project aims to estimate the rotation speed of the different spatial objects that are represented as streaks in images. Ideally,
-this could be use to determine if the object is a satellite, or if the rotation is too fast so this would be a debris. We could use 
+this could be used to determine if the object is a satellite, or if the rotation is too fast so this would be a debris. We could use 
 this pipeline to classify the tracks.
 \newline
 \newline
-In reality, we could not tell if this require some modifications or if the current state of the pipeline is precise enough, because of 
+In reality, we could not tell if this requires some modifications or if the current state of the pipeline is precise enough, because of 
 the lack of real information on the subject. This was the main concern when doing this project. We were not able to find any rotation speed of any object that we encountered when we were
 exploring images. The only streak that we have successfully matched with a known object was the main track (Figure \ref{mainFitsStreak}),
-that was a debris of the European carrier rocket Ariane 2. The result we obtained for this streak seems possible but we cannot say surely
-that this is actually completely accurate, and how precise the outcome is. Also the real tracks may not produce a perfectly sinusoidal intensity, so this could also lead
-to imprecision when using this system. The real streaks can also be really darker that the one that we studied, so the noise will have a more 
+that was a debris of the European carrier rocket Ariane 2. The result we obtained for this streak seems possible but we cannot say
+with confidence that this is actually completely accurate, and how precise the outcome is. Also the real tracks may not produce a perfectly sinusoidal intensity, so this could also lead
+to imprecision when using this system. The real streaks can also be really darker than the one that we studied, so the noise will have a more 
 significant weight, thus the result of the pipeline could be pretty uncertain. This pipeline can produce only an estimation and not a very
 precise result, due to the difficulty of this kind of detection \cite{GeoSatellite}.
 \newline
 \newline
 This was the reason why we started by producing our own streaks, so that we could modify the frequency as we wanted and have the real
 value to compare it with the obtained one. This part works well and produces pretty realistic tracks, but it has the disadvantage to be
-dependent of a custom PSF that we have to find for each image. Otherwise, this could maybe be used to train an machine learning algorithm
-to detect satellite as it can generate streaks where we want to. 
+dependent on a custom PSF that we have to find for each image. Otherwise, this could maybe be used to train a machine learning algorithm
+to detect satellites as it can generate streaks where we want to. 
 \newline
 \newline
-The second part of the project, that we discussed in Chapter \ref{findIntensityChapter}, could ideally be used combined with DetectSat,
-so that the line that are detected are automatically given as input to the pipeline. It is indeed useful to directly have information
+The second part of the project, which we discussed in Chapter \ref{findIntensityChapter}, could ideally be used combined with DetectSat,
+so that the lines that are detected are automatically given as input to the pipeline. It is indeed useful to directly have information
 about the track that we have detected, as it can be used later to classify the kind of object that the streak is. 
 
 
