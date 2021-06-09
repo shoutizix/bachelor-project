@@ -77,6 +77,35 @@
       \verb https://github.com/YBouquet/detectsat
       \endverb
     \endentry
+    \entry{intensityStreakRepository}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8a64b2aa130fce616354712af9bd767a}{%
+           family={Kaltenrieder},
+           familyi={K\bibinitperiod},
+           given={Noah},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{8a64b2aa130fce616354712af9bd767a}
+      \strng{fullhash}{8a64b2aa130fce616354712af9bd767a}
+      \strng{bibnamehash}{8a64b2aa130fce616354712af9bd767a}
+      \strng{authorbibnamehash}{8a64b2aa130fce616354712af9bd767a}
+      \strng{authornamehash}{8a64b2aa130fce616354712af9bd767a}
+      \strng{authorfullhash}{8a64b2aa130fce616354712af9bd767a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{IntesityStreak.ipynb}}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/YBouquet/detectsat
+      \endverb
+      \verb{url}
+      \verb https://github.com/YBouquet/detectsat
+      \endverb
+    \endentry
     \entry{fastFourierTransform}{article}{}
       \name{author}{10}{}{%
         {{hash=449653e3df929c3b555124c581ca5d50}{%
@@ -136,8 +165,8 @@
       \strng{authorbibnamehash}{40ba333a95c53ea9fefcd85f3529e945}
       \strng{authornamehash}{7e2e990d45d7875084cb17cef2120b64}
       \strng{authorfullhash}{40ba333a95c53ea9fefcd85f3529e945}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Proceedings of the IEEE}
@@ -150,6 +179,80 @@
       \verb{doi}
       \verb 10.1109/PROC.1967.5957
       \endverb
+    \endentry
+    \entry{leastSquare}{online}{}
+      \name{author}{1}{}{%
+        {{hash=819197bfeff32a3f58d49b2a3eb0a580}{%
+           family={Weisstein},
+           familyi={W\bibinitperiod},
+           given={Eric\bibnamedelima W.},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{fullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{bibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorbibnamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authornamehash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \strng{authorfullhash}{819197bfeff32a3f58d49b2a3eb0a580}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{From MathWorld--A Wolfram Web Resource}
+      \field{title}{Least Squares Fitting.}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://mathworld.wolfram.com/LeastSquaresFitting.html
+      \endverb
+      \verb{url}
+      \verb https://mathworld.wolfram.com/LeastSquaresFitting.html
+      \endverb
+    \endentry
+    \entry{GeoSatellite}{online}{}
+      \name{author}{4}{}{%
+        {{hash=29a9139ee0130798b0791189bba47ace}{%
+           family={Binz},
+           familyi={B\bibinitperiod},
+           given={Christopher\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=713327dfe73f02a7201fa9b157d3d8b2}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Mark\bibnamedelima A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=78bf221bbccfbf5547fa65f1229b4af9}{%
+           family={Kelm},
+           familyi={K\bibinitperiod},
+           given={Bernie\bibnamedelima E.},
+           giveni={B\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f6c12025525fe069680d5a457c475ccc}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Christopher\bibnamedelima I.},
+           giveni={C\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+      }
+      \strng{namehash}{494f75c3300529a1b328c133ac9d49ad}
+      \strng{fullhash}{d5b03cf6e87beae122a79b0b5b5cc1fa}
+      \strng{bibnamehash}{d5b03cf6e87beae122a79b0b5b5cc1fa}
+      \strng{authorbibnamehash}{d5b03cf6e87beae122a79b0b5b5cc1fa}
+      \strng{authornamehash}{494f75c3300529a1b328c133ac9d49ad}
+      \strng{authorfullhash}{d5b03cf6e87beae122a79b0b5b5cc1fa}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Optical Survey of the Tumble Rates of Retired GEO Satellites}}
+      \field{urlyear}{2021}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://apps.dtic.mil/sti/citations/ADA620242
+      \endverb
+      \verb{url}
+      \verb https://apps.dtic.mil/sti/citations/ADA620242
+      \endverb
+      \keyw{conference}
     \endentry
   \enddatalist
 \endrefsection

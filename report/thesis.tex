@@ -103,7 +103,7 @@ captured image February 22, 2020, at 02:11:36, and with the pixels scaled using 
     \captionof{figure}{The main FITS image that we used}
     \label{mainFits}
 \end{center}
-The pipeline is being run on the entire file, with the coordinates that are relative to the entire file : the origin is at the bottom left of
+The pipeline \cite{intensityStreakRepository} is being run on the entire file, with the coordinates that are relative to the entire file : the origin is at the bottom left of
 the fits file. The first part of this project, which is about line generation, is completely based on this file Figure \ref{mainFits}. We chose
 this file because we can clearly see a really interesting track that goes through the image :
 \begin{center}
@@ -217,7 +217,7 @@ assuming a geostationary object, this would imply $4.18$ rotation per second and
 rotation rate.
 \newline
 \newline
-Finally, we used the "\textbf{curve\_fit}" function from the scipy library that use the least square optimization to find the frequency of the
+Finally, we used the "\textbf{curve\_fit}" function from the scipy library that use the least square optimization \cite{leastSquare} to find the frequency of the
 original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will converge 
 fast into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
 divide the number of cycles that we found with the Fourier analysis part, by the width of the streak. 
@@ -289,7 +289,7 @@ is truly bright in comparison with other streaks that can be pretty discrete and
 Obviously, using the pipeline on these kinds of tracks will give an imprecise result with a much bigger error percent.
 \newline
 \newline
-Now let's see the result with a more realistic rotated line that does not run  into any specially bright object that could introduce some 
+Now let's see the result with a more realistic rotated line that does not run into any specially bright object that could introduce some 
 more noises. The streak is also very bright, so we can say that this is actually ideal conditions.
 \begin{figure}[h]
     \begin{minipage}[c]{.47\linewidth}
@@ -402,18 +402,22 @@ This project aims to estimate the rotation speed of the different spatial object
 this could be use to determine if the object is a satellite, or if the rotation is too fast so this would be a debris. We could use 
 this pipeline to classify the tracks.
 \newline
+\newline
 In reality, we could not tell if this require some modifications or if the current state of the pipeline is precise enough, because of 
 the lack of real information on the subject. This was the main concern when doing this project. We were not able to find any rotation speed of any object that we encountered when we were
 exploring images. The only streak that we have successfully matched with a known object was the main track (Figure \ref{mainFitsStreak}),
 that was a debris of the European carrier rocket Ariane 2. The result we obtained for this streak seems possible but we cannot say surely
 that this is actually completely accurate, and how precise the outcome is. Also the real tracks may not produce a perfectly sinusoidal intensity, so this could also lead
 to imprecision when using this system. The real streaks can also be really darker that the one that we studied, so the noise will have a more 
-significant weight, thus the result of the pipeline could be pretty uncertain.
+significant weight, thus the result of the pipeline could be pretty uncertain. This pipeline can produce only an estimation and not a very
+precise result, due to the difficulty of this kind of detection \cite{GeoSatellite}.
+\newline
 \newline
 This was the reason why we started by producing our own streaks, so that we could modify the frequency as we wanted and have the real
 value to compare it with the obtained one. This part works well and produces pretty realistic tracks, but it has the disadvantage to be
 dependent of a custom PSF that we have to find for each image. Otherwise, this could maybe be used to train an machine learning algorithm
 to detect satellite as it can generate streaks where we want to. 
+\newline
 \newline
 The second part of the project, that we discussed in Chapter \ref{findIntensityChapter}, could ideally be used combined with DetectSat,
 so that the line that are detected are automatically given as input to the pipeline. It is indeed useful to directly have information
