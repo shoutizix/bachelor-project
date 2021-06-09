@@ -175,6 +175,7 @@ works with another image we have to choose a star from the new file to have a co
 %%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Find the Intensity Along the Track}
 %%%%%%%%%%%%%%%%%%%%%%%%
+\label{findIntensityChapter}
 
 %%%%%%PARLER DU MASK POUR LES LIGNES
 %%%%%%AJOUTER IMAGE INVERSE FOURIER 
@@ -242,7 +243,9 @@ the existing information about the objects that we will detect.
 Running the pipeline on a line that we created previously, takes less than 10 seconds, by blocks of the mosaic, using a 1,8 GHz Intel Core i5 dual core
 on a MacBook Air 2017. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Result on Generated streak}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 When running it on the generated lines that we talked about above, the pipeline gives pretty satisfying results. Here we can see the result 
 of a basic case with a horizontal line but that  runs into a star or bright object.
 \begin{figure}[h]
@@ -291,10 +294,89 @@ frequency, it is still close to the expected value so we can say that this resul
 is of $0.38\%$. This result shows that, when the streak is bright enough, the pipeline performs amazingly well on the generated lines that
 we have created ourself.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Result on Real streak}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 In this part, we used the track that can be seen in Figure \ref{mainFitsStreak} to test the final pipeline. Because when we were working
 on this project, it was the only streak that we have successfully identified. This track is a debris from Ariane 2, we knew it thanks to
-PredicSat that also compute information about it, like the altitude and %%%% VOIR A MODIFIER
+PredicSat that also compute information about it like the altitude of the object, for this track the altitude is $\sim 35'300\ [km]$. That
+is a good news, because it corresponds well with our assumption about the geostationary altitude that we have made in Chapter \ref{findIntensityChapter}.
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_part_1_line_graph}
+        \caption{Total intensity by x coordinate on the first part of the track}
+        \label{graphPart1Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{part_1_line}
+        \caption{The first part of the track}
+    \end{minipage}
+\end{figure}
+\hfill
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_part_2_line_graph}
+        \caption{Total intensity by x coordinate on the second part of the track}
+        \label{graphPart2Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{part_2_line}
+        \caption{The second part of the track}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_part_3_line_graph}
+        \caption{Total intensity by x coordinate on the third part of the track}
+        \label{graphPart3Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{part_3_line}
+        \caption{The third part of the track}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_part_4_line_graph}
+        \caption{Total intensity by x coordinate on the fourth part of the track}
+        \label{graphPart4Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{part_4_line}
+        \caption{The fourth part of the track}
+    \end{minipage}
+\end{figure}
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+We get the same result for the rotation rate for the first, third and fourth part of the track (Figure \ref{graphPart1Track}, 
+Figure \ref{graphPart3Track}, Figure \ref{graphPart4Track}) : $\sim 1.20\ [s^{-1}]$. Only the third part outputs a rotation rate 
+of $\sim 0.6\ [s^{-1}]$. We can observe that on the graphic in Figure \ref{graphPart2Track} that the data are a bit noisy, it is hard
+even with eyes to observe any kind of sinusoidal shaped function. We can see now the limit of this system, even if the fitted function 
+seems pretty reasonable, it would also look great using the same frequency found with the other parts of the track. So there are multiple
+possible results and it can be hard to determine which one is the most accurate. In fact, we cannot, with only one part of the track,
+tell if it is right or wrong. We have to have some knowledge about what values are possible and not, given that we do not have access 
+to any kind of information about the rotation of the objects that appeared in the images that we had, we cannot really say if the rotation
+rate found by the pipeline is correct or not. 
+\newline
+Since this track was made by a debris, the result of $\sim 1.20$ rotation per second, which is already a very high rotation rate, 
+is plausible for this type of objects. 
+
 
 %%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
