@@ -179,7 +179,6 @@ works with another image we have to choose a star from the new file to have a co
 \label{findIntensityChapter}
 
 %%%%%%PARLER DU MASK POUR LES LIGNES
-%%%%%%AJOUTER IMAGE INVERSE FOURIER 
 
 Once the generation part was done, we started the main part of the project that was finding back the periodicity of the previously generated sinusoid 
 intensity streak and finally apply the final pipeline on real tracks.
@@ -219,7 +218,15 @@ rotation rate.
 \newline
 Finally, we used the "\textbf{curve\_fit}" function from the scipy library that use the least square optimization \cite{leastSquare} to find the frequency of the
 original sinusoid function. But to use this function, we have to make a good first guess of the parameters, so that they will converge 
-fast into the right value. A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
+fast into the right value by minimizing the difference between the guessed parameters and the intensity data. Here, we optimized the 
+different parameters of the sinusoid function that we have defined :
+\begin{itemize}
+    \item The amplitude
+    \item Frequency
+    \item Phase
+    \item Offset
+\end{itemize}
+A good first guess for the frequency, which is the only parameter of the sinusoid function that really interests us, is to 
 divide the number of cycles that we found with the Fourier analysis part, by the width of the streak. 
 \newline
 Using this pipeline, we usually find good estimation of the wave but it can vary a lot when there are a lot of noises.
@@ -392,6 +399,80 @@ rate found by the pipeline is correct or not.
 \newline
 Since this track was made by a spatial debris, the result of $\sim 1.20$ rotation per second, which is already a very high rotation rate, 
 is plausible for this type of object. 
+\newline
+\newline
+We tested our pipeline on another track that was nicely bright, but we did not know what satellite or object it corresponds to. Therefore,
+we cannot verify the result of the pipeline precisely. We can only observe by eye on the graph that the fitted function sticks pretty
+well the data, so this is already a good sign.
+
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_1_graph}
+        \caption{Total intensity by x coordinate on the first part of the track}
+        \label{graphPart1Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_1}
+        \caption{The first part of the track}
+    \end{minipage}
+\end{figure}
+\hfill
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_2_graph}
+        \caption{Total intensity by x coordinate on the second part of the track}
+        \label{graphPart2Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_2}
+        \caption{The second part of the track}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_3_graph}
+        \caption{Total intensity by x coordinate on the third part of the track}
+        \label{graphPart3Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_3}
+        \caption{The third part of the track}
+    \end{minipage}
+\end{figure}
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_4_graph}
+        \caption{Total intensity by x coordinate on the fourth part of the track}
+        \label{graphPart4Track}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_4}
+        \caption{The fourth part of the track}
+    \end{minipage}
+\end{figure}
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+The rotation rates found on this streak are the same for every part : $\sim 0.54\ [s^{-1}]$. It would mean that the object performs a rotation
+every $\sim 1.85\ [s]$, still assuming a geostationary orbit, which is feasible. Unfortunately, we have no real information about the object 
+that has produced this track, so we cannot tell if it is correct and how accurate this result is. But if we only look at the graphs, 
+the output of the pipeline seems pretty valid. 
 
 
 %%%%%%%%%%%%%%%%%%%%
