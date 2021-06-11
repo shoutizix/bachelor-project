@@ -316,7 +316,32 @@ more noises. The streak is also very bright, so we can say that this is actually
 We can see that the frequency of the fitted function seems to approximate the data reasonably well. The pipeline finds $0.009962$ for the
 frequency, it is still close to the expected value so we can say that this result is really satisfying. The error of the computed outcome
 is of $0.38\%$. This result shows that, when the streak is bright enough, the pipeline performs amazingly well on the generated lines that
-we have created ourself.
+we have created ourself. We have tested the pipeline with generated lines for every angle at this position and reported the result on the
+following graph :
+\begin{center}
+    \includegraphics[scale=0.7]{report_error_angles}
+    \captionof{figure}{The percentage of error by angle of the line}
+    \label{error_angles_graph}
+\end{center}
+Thus we have computed the mean percentage of error of the pipeline in this situation, that gives $10.14 \%$, which is globally acceptable. We can 
+explain this result with the fact that depending on the angle of the line, it could cross more or less bright things, like stars and galaxies;
+thus the signal will be noisier and the result less accurate. We have observed that when the angle was $356\ [degrees]$ the pipeline will not
+even find the optimal parameters, because it crosses a very bright star that adds a big peak of intensity, which leads to a more difficult
+optimization of the parameters.
+\begin{figure}[h]
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[width=\linewidth, scale=0.5]{report_line_crossed_star_356_graph}
+        \caption{Total intensity by x coordinate on the line with 356 degrees of rotation}
+        \label{graphRotated356Line}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[c]{.47\linewidth}
+        \centering
+        \includegraphics[scale=0.5]{report_star_crossed_line}
+        \caption{The star crossed by the line}
+    \end{minipage}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Result on Real streak}
@@ -410,7 +435,7 @@ well the data, so this is already a good sign.
         \centering
         \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_1_graph}
         \caption{Total intensity by x coordinate on the first part of the track}
-        \label{graphPart1Track}
+        \label{graphPart1Track2}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{.47\linewidth}
@@ -425,7 +450,7 @@ well the data, so this is already a good sign.
         \centering
         \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_2_graph}
         \caption{Total intensity by x coordinate on the second part of the track}
-        \label{graphPart2Track}
+        \label{graphPart2Track2}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{.47\linewidth}
@@ -439,7 +464,7 @@ well the data, so this is already a good sign.
         \centering
         \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_3_graph}
         \caption{Total intensity by x coordinate on the third part of the track}
-        \label{graphPart3Track}
+        \label{graphPart3Track2}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{.47\linewidth}
@@ -453,7 +478,7 @@ well the data, so this is already a good sign.
         \centering
         \includegraphics[width=\linewidth, scale=0.5]{report_line_real_2_part_4_graph}
         \caption{Total intensity by x coordinate on the fourth part of the track}
-        \label{graphPart4Track}
+        \label{graphPart4Track2}
     \end{minipage}
     \hfill
     \begin{minipage}[c]{.47\linewidth}

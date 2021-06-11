@@ -17,8 +17,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.1}Result on Generated streak}{14}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Result on Real streak}{16}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Result on Real streak}{17}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{20}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Conclusion}{21}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{22}{section*.17}%
+\contentsline {chapter}{Bibliography}{23}{section*.18}%

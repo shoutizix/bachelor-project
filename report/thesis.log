@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  11 JUN 2021 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.3)  11 JUN 2021 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -628,18 +628,6 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 
 LaTeX Warning: Label `graphHorizontalLine' multiply defined.
 
-
-LaTeX Warning: Label `graphPart1Track' multiply defined.
-
-
-LaTeX Warning: Label `graphPart2Track' multiply defined.
-
-
-LaTeX Warning: Label `graphPart3Track' multiply defined.
-
-
-LaTeX Warning: Label `graphPart4Track' multiply defined.
-
 )
 \openout1 = `thesis.aux'.
 
@@ -992,163 +980,187 @@ Package pdftex.def Info: report_rotated_line_on_image_result.png  used on input
  line 311.
 (pdftex.def)             Requested size: 53.60338pt x 194.33739pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--320
+Underfull \hbox (badness 10000) in paragraph at lines 290--321
 
  []
 
 [14
 
  <./fit_find_line_horizontal.png> <./report_crossed_line.png>]
-<report_part_1_line_graph.png, id=188, 387.4475pt x 252.945pt>
-File: report_part_1_line_graph.png Graphic file (type png)
-<use report_part_1_line_graph.png>
-Package pdftex.def Info: report_part_1_line_graph.png  used on input line 331.
-(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_1_line.png, id=189, 2020.54875pt x 571.13374pt>
-File: part_1_line.png Graphic file (type png)
-<use part_1_line.png>
-Package pdftex.def Info: part_1_line.png  used on input line 338.
-(pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
-<report_part_2_line_graph.png, id=190, 387.4475pt x 252.945pt>
-File: report_part_2_line_graph.png Graphic file (type png)
-<use report_part_2_line_graph.png>
-Package pdftex.def Info: report_part_2_line_graph.png  used on input line 346.
-(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_2_line.png, id=191, 2020.54875pt x 571.13374pt>
-File: part_2_line.png Graphic file (type png)
-<use part_2_line.png>
-Package pdftex.def Info: part_2_line.png  used on input line 353.
-(pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
-<report_part_3_line_graph.png, id=192, 387.4475pt x 252.945pt>
-File: report_part_3_line_graph.png Graphic file (type png)
-<use report_part_3_line_graph.png>
-Package pdftex.def Info: report_part_3_line_graph.png  used on input line 360.
-(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_3_line.png, id=193, 1745.52126pt x 372.39125pt>
-File: part_3_line.png Graphic file (type png)
-<use part_3_line.png>
-Package pdftex.def Info: part_3_line.png  used on input line 367.
-(pdftex.def)             Requested size: 872.7585pt x 186.19516pt.
-<report_part_4_line_graph.png, id=194, 387.4475pt x 252.945pt>
-File: report_part_4_line_graph.png Graphic file (type png)
-<use report_part_4_line_graph.png>
-Package pdftex.def Info: report_part_4_line_graph.png  used on input line 374.
-(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<part_4_line.png, id=195, 1930.21124pt x 384.43625pt>
-File: part_4_line.png Graphic file (type png)
-<use part_4_line.png>
-Package pdftex.def Info: part_4_line.png  used on input line 381.
-(pdftex.def)             Requested size: 965.10327pt x 192.21765pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--407
-
- []
+<report_error_angles.png, id=186, 387.4475pt x 259.97125pt>
+File: report_error_angles.png Graphic file (type png)
+<use report_error_angles.png>
+Package pdftex.def Info: report_error_angles.png  used on input line 322.
+(pdftex.def)             Requested size: 271.2114pt x 181.97862pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--407
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 324--407
-
- []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 323.
+See the caption package documentation for explanation.
 
 [15 <./fit_find_line_80_deg.png> <./report_rotated_line_on_image_result.png>]
+<report_line_crossed_star_356_graph.png, id=193, 386.44376pt x 255.95625pt>
+File: report_line_crossed_star_356_graph.png Graphic file (type png)
+<use report_line_crossed_star_356_graph.png>
+Package pdftex.def Info: report_line_crossed_star_356_graph.png  used on input 
+line 334.
+(pdftex.def)             Requested size: 193.2214pt x 127.9778pt.
+<report_star_crossed_line.png, id=194, 339.2675pt x 173.64874pt>
+File: report_star_crossed_line.png Graphic file (type png)
+<use report_star_crossed_line.png>
+Package pdftex.def Info: report_star_crossed_line.png  used on input line 341.
+(pdftex.def)             Requested size: 169.63333pt x 86.82416pt.
+<report_part_1_line_graph.png, id=197, 387.4475pt x 252.945pt>
+File: report_part_1_line_graph.png Graphic file (type png)
+<use report_part_1_line_graph.png>
+Package pdftex.def Info: report_part_1_line_graph.png  used on input line 356.
+(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
+<part_1_line.png, id=198, 2020.54875pt x 571.13374pt>
+File: part_1_line.png Graphic file (type png)
+<use part_1_line.png>
+Package pdftex.def Info: part_1_line.png  used on input line 363.
+(pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
+<report_part_2_line_graph.png, id=199, 387.4475pt x 252.945pt>
+File: report_part_2_line_graph.png Graphic file (type png)
+<use report_part_2_line_graph.png>
+Package pdftex.def Info: report_part_2_line_graph.png  used on input line 371.
+(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
+<part_2_line.png, id=200, 2020.54875pt x 571.13374pt>
+File: part_2_line.png Graphic file (type png)
+<use part_2_line.png>
+Package pdftex.def Info: part_2_line.png  used on input line 378.
+(pdftex.def)             Requested size: 1010.27191pt x 285.56618pt.
+<report_part_3_line_graph.png, id=201, 387.4475pt x 252.945pt>
+File: report_part_3_line_graph.png Graphic file (type png)
+<use report_part_3_line_graph.png>
+Package pdftex.def Info: report_part_3_line_graph.png  used on input line 385.
+(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
+<part_3_line.png, id=202, 1745.52126pt x 372.39125pt>
+File: part_3_line.png Graphic file (type png)
+<use part_3_line.png>
+Package pdftex.def Info: part_3_line.png  used on input line 392.
+(pdftex.def)             Requested size: 872.7585pt x 186.19516pt.
+<report_part_4_line_graph.png, id=203, 387.4475pt x 252.945pt>
+File: report_part_4_line_graph.png Graphic file (type png)
+<use report_part_4_line_graph.png>
+Package pdftex.def Info: report_part_4_line_graph.png  used on input line 399.
+(pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
+<part_4_line.png, id=204, 1930.21124pt x 384.43625pt>
+File: part_4_line.png Graphic file (type png)
+<use part_4_line.png>
+Package pdftex.def Info: part_4_line.png  used on input line 406.
+(pdftex.def)             Requested size: 965.10327pt x 192.21765pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--432
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--432
+
+ []
+
+[16 <./report_error_angles.png> <./report_line_crossed_star_356_graph.png> <./r
+eport_star_crossed_line.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16 <./report_part_1_line_graph.png> <./part_1_line.png> <./report_part_2_line_
-graph.png> <./part_2_line.png>] [17 <./report_part_3_line_graph.png> <./part_3_
+[17 <./report_part_1_line_graph.png> <./part_1_line.png> <./report_part_2_line_
+graph.png> <./part_2_line.png>] [18 <./report_part_3_line_graph.png> <./part_3_
 line.png> <./report_part_4_line_graph.png> <./part_4_line.png>]
-<report_line_real_2_part_1_graph.png, id=226, 387.4475pt x 252.945pt>
+<report_line_real_2_part_1_graph.png, id=233, 387.4475pt x 252.945pt>
 File: report_line_real_2_part_1_graph.png Graphic file (type png)
 <use report_line_real_2_part_1_graph.png>
 Package pdftex.def Info: report_line_real_2_part_1_graph.png  used on input lin
-e 411.
+e 436.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<report_line_real_2_part_1.png, id=227, 2012.51875pt x 810.02625pt>
+<report_line_real_2_part_1.png, id=234, 2012.51875pt x 810.02625pt>
 File: report_line_real_2_part_1.png Graphic file (type png)
 <use report_line_real_2_part_1.png>
-Package pdftex.def Info: report_line_real_2_part_1.png  used on input line 418.
+Package pdftex.def Info: report_line_real_2_part_1.png  used on input line 443.
 
 (pdftex.def)             Requested size: 1006.25693pt x 405.01213pt.
-<report_line_real_2_part_2_graph.png, id=228, 387.4475pt x 252.945pt>
+<report_line_real_2_part_2_graph.png, id=235, 387.4475pt x 252.945pt>
 File: report_line_real_2_part_2_graph.png Graphic file (type png)
 <use report_line_real_2_part_2_graph.png>
 Package pdftex.def Info: report_line_real_2_part_2_graph.png  used on input lin
-e 426.
+e 451.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<report_line_real_2_part_2.png, id=229, 2012.51875pt x 810.02625pt>
+<report_line_real_2_part_2.png, id=236, 2012.51875pt x 810.02625pt>
 File: report_line_real_2_part_2.png Graphic file (type png)
 <use report_line_real_2_part_2.png>
-Package pdftex.def Info: report_line_real_2_part_2.png  used on input line 433.
+Package pdftex.def Info: report_line_real_2_part_2.png  used on input line 458.
 
 (pdftex.def)             Requested size: 1006.25693pt x 405.01213pt.
-<report_line_real_2_part_3_graph.png, id=230, 387.4475pt x 252.945pt>
+<report_line_real_2_part_3_graph.png, id=237, 387.4475pt x 252.945pt>
 File: report_line_real_2_part_3_graph.png Graphic file (type png)
 <use report_line_real_2_part_3_graph.png>
 Package pdftex.def Info: report_line_real_2_part_3_graph.png  used on input lin
-e 440.
+e 465.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<report_line_real_2_part_3.png, id=231, 2012.51875pt x 810.02625pt>
+<report_line_real_2_part_3.png, id=238, 2012.51875pt x 810.02625pt>
 File: report_line_real_2_part_3.png Graphic file (type png)
 <use report_line_real_2_part_3.png>
-Package pdftex.def Info: report_line_real_2_part_3.png  used on input line 447.
+Package pdftex.def Info: report_line_real_2_part_3.png  used on input line 472.
 
 (pdftex.def)             Requested size: 1006.25693pt x 405.01213pt.
-<report_line_real_2_part_4_graph.png, id=232, 387.4475pt x 252.945pt>
+<report_line_real_2_part_4_graph.png, id=239, 387.4475pt x 252.945pt>
 File: report_line_real_2_part_4_graph.png Graphic file (type png)
 <use report_line_real_2_part_4_graph.png>
 Package pdftex.def Info: report_line_real_2_part_4_graph.png  used on input lin
-e 454.
+e 479.
 (pdftex.def)             Requested size: 193.72327pt x 126.47218pt.
-<report_line_real_2_part_4.png, id=233, 2012.51875pt x 810.02625pt>
+<report_line_real_2_part_4.png, id=240, 2012.51875pt x 810.02625pt>
 File: report_line_real_2_part_4.png Graphic file (type png)
 <use report_line_real_2_part_4.png>
-Package pdftex.def Info: report_line_real_2_part_4.png  used on input line 461.
+Package pdftex.def Info: report_line_real_2_part_4.png  used on input line 486.
 
 (pdftex.def)             Requested size: 1006.25693pt x 405.01213pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 422--476
+Underfull \hbox (badness 10000) in paragraph at lines 447--501
 
  []
 
@@ -1158,43 +1170,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18 <./report_line_real_2_part_1_graph.png> <./report_line_real_2_part_1.png> <
+[19 <./report_line_real_2_part_1_graph.png> <./report_line_real_2_part_1.png> <
 ./report_line_real_2_part_2_graph.png> <./report_line_real_2_part_2.png>]
-[19 <./report_line_real_2_part_3_graph.png> <./report_line_real_2_part_3.png> <
+[20 <./report_line_real_2_part_3_graph.png> <./report_line_real_2_part_3.png> <
 ./report_line_real_2_part_4_graph.png> <./report_line_real_2_part_4.png>]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--506
+Underfull \hbox (badness 10000) in paragraph at lines 507--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--506
+Underfull \hbox (badness 10000) in paragraph at lines 507--531
 
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 482--506
+Underfull \hbox (badness 1009) in paragraph at lines 507--531
 \T1/put/m/n/12 (+20) This was the rea-son why we started by pro-duc-ing our own
  streaks, so that we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--506
+Underfull \hbox (badness 10000) in paragraph at lines 507--531
 
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 482--506
+Underfull \hbox (badness 1107) in paragraph at lines 507--531
 \T1/put/m/n/12 (+20) The sec-ond part of the project, which we dis-cussed in Ch
 ap-ter [][]4[][], could ide-ally
  []
 
-[20
+[21
 
-] [21]
+] [22]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 5
-11.
+36.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1202,18 +1214,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 553.
 
-[22
+[23
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 553.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 528.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 528.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 553.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 553.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 29AD0238CC543190E12A6044D635437A;624.
+(rerunfilecheck)             Checksum: C378F04CECFA262AE4A065BF9088A27C;624.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1223,10 +1235,10 @@ Package logreq Info: Writing requests to 'thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18239 strings out of 480608
- 322543 string characters out of 5903630
- 1066094 words of memory out of 5000000
- 33637 multiletter control sequences out of 15000+600000
+ 18269 strings out of 480608
+ 323370 string characters out of 5903630
+ 1065665 words of memory out of 5000000
+ 33664 multiletter control sequences out of 15000+600000
  632338 words of font info for 166 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  49i,10n,54p,863b,1761s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1244,10 +1256,10 @@ mf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2020/texmf-dist
 type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
 public/cm-super/sfss2074.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/cm-super/sftt1200.pfb>
-Output written on thesis.pdf (22 pages, 28228209 bytes).
+Output written on thesis.pdf (23 pages, 28318693 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 25335 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 252 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 25350 words of extra memory for PDF output out of 29859 (max. 10000000)
 
