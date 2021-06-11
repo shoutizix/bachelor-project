@@ -325,7 +325,7 @@ following graph :
 \end{center}
 Thus we have computed the mean percentage of error of the pipeline in this situation, that gives $10.14 \%$, which is globally acceptable. We can 
 explain this result with the fact that depending on the angle of the line, it could cross more or less bright things, like stars and galaxies;
-thus the signal will be noisier and the result less accurate. We have observed that when the angle was $356\ [degrees]$ the pipeline will not
+thus the signal will be noisier and the result less accurate. We have observed that when the angle was 356 [degrees] the pipeline will not
 even find the optimal parameters, because it crosses a very bright star that adds a big peak of intensity, which leads to a more difficult
 optimization of the parameters.
 \begin{figure}[h]
@@ -342,6 +342,19 @@ optimization of the parameters.
         \caption{The star crossed by the line}
     \end{minipage}
 \end{figure}
+
+We also add Gaussian noises to the original signal and put it on the image with a rotation of $100$ [degrees], because at this angle the line
+does not encouter many stars or bright object that could also introduce more noise. We have use these noised signals as input for the pipeline 
+and computed the results for each standard deviation from $0$ to $500$ with a step of $5$.
+\begin{center}
+    \includegraphics[scale=0.5]{report_error_std}
+    \captionof{figure}{The percentage of error by the standard deviation of the noise}
+    \label{error_noise_graph}
+\end{center}
+The Figure \ref{error_noise_graph} shows that the pipeline is not really affected until a standard deviation of $\sim 190$, but is still 
+pretty reasonable until $\sim 270$. In fact, when the standard deviation is more than $\sim 270$, the results given by the system are 
+randomly correct. We found a mean percentage of error of $56.88 \%$ considering the all graphic, but if we look only the first $60$ results,
+it corresponds to a maximum standard deviation of $300$, we have now a much better mean percentage of error of $15.93 \%$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Result on Real streak}
@@ -412,6 +425,8 @@ is good news, because it corresponds well with our assumption about the geostati
 \newline
 \newline
 \newline
+\newline
+\newline
 We get the same result for the rotation rate for the first, third and fourth part of the track (Figure \ref{graphPart1Track}, 
 Figure \ref{graphPart3Track}, Figure \ref{graphPart4Track}) : $\sim 1.20\ [s^{-1}]$. Only the third part outputs a rotation rate 
 of $\sim 0.6\ [s^{-1}]$. We can observe that on the graphic in Figure \ref{graphPart2Track} that the data are a bit noisy, it is hard
@@ -421,6 +436,7 @@ possible results and it can be hard to determine which one is the most accurate.
 tell if it is right or wrong. We have to have some knowledge about what values are possible and not, given that we do not have access 
 to any kind of information about the rotation of the objects that appeared in the images that we had, we cannot really say if the rotation
 rate found by the pipeline is correct or not. 
+\newline
 \newline
 Since this track was made by a spatial debris, the result of $\sim 1.20$ rotation per second, which is already a very high rotation rate, 
 is plausible for this type of object. 
@@ -487,6 +503,18 @@ well the data, so this is already a good sign.
         \caption{The fourth part of the track}
     \end{minipage}
 \end{figure}
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
 \newline
 \newline
 \newline
