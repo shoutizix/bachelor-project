@@ -344,7 +344,7 @@ optimization of the parameters.
 \end{figure}
 
 We also add Gaussian noises to the original signal and put it on the image with a rotation of $100$ [degrees], because at this angle the line
-does not encouter many stars or bright object that could also introduce more noise. We have use these noised signals as input for the pipeline 
+does not encounter many stars or bright objects that could also introduce more noise. We have used these noised signals as input for the pipeline 
 and computed the results for each standard deviation from $0$ to $500$ with a step of $5$.
 \begin{center}
     \includegraphics[scale=0.5]{report_error_std}
@@ -353,8 +353,8 @@ and computed the results for each standard deviation from $0$ to $500$ with a st
 \end{center}
 The Figure \ref{error_noise_graph} shows that the pipeline is not really affected until a standard deviation of $\sim 190$, but is still 
 pretty reasonable until $\sim 270$. In fact, when the standard deviation is more than $\sim 270$, the results given by the system are 
-randomly correct. We found a mean percentage of error of $56.88 \%$ considering the all graphic, but if we look only the first $60$ results,
-it corresponds to a maximum standard deviation of $300$, we have now a much better mean percentage of error of $15.93 \%$.
+randomly correct. We found a mean percentage of error of $56.88 \%$ considering the  entire graphic, but if we look only the first $60$ results,
+it corresponds to a maximum standard deviation of $300$, we now have a much better mean percentage of error of $15.93 \%$.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Result on Real streak}
@@ -542,7 +542,9 @@ the lack of real information on the subject. This was the main concern when doin
 exploring images. The only streak that we have successfully matched with a known object was the main track (Figure \ref{mainFitsStreak}),
 that was a debris of the European carrier rocket Ariane 2. The result we obtained for this streak seems possible but we cannot say
 with confidence that this is actually completely accurate, and how precise the outcome is. Also the real tracks may not produce a perfectly sinusoidal intensity, so this could also lead
-to imprecision when using this system. The real streaks can also be really darker than the one that we studied, so the noise will have a more 
+to imprecision when using this system. The pipeline seems to produce coherent result when launched on the other track that we have tested.
+Unfortunately, we have not discovered the real information about this object, so we could not verify our result.
+The real streaks can also be really darker than the one that we studied, so the noise will have a more 
 significant weight, thus the result of the pipeline could be pretty uncertain. This pipeline can produce only an estimation and not a very
 precise result, due to the difficulty of this kind of detection \cite{GeoSatellite}.
 \newline
